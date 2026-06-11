@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services RH, Paie & Comptabilité – S&L Conseil RH/Paie</title>
+  <meta name="description" content="Nos services : gestion de la paie et DSN, administration RH, conseil stratégique RH, comptabilité pour indépendants et PME. Tarifs transparents, mission ponctuelle ou contrat régulier." />
+  <meta name="keywords" content="gestion paie freelance, DSN, bulletins de salaire, administration RH, contrats travail, DPAE, conseil RH, GPEC, comptabilité PME, Île-de-France" />
+  <meta name="author" content="Armand Stéphane MOMASSO BOULI" />
+    <meta name="google-site-verification" content="6OkVMW998DL7Skp7Ol39t3DmgtOdneUFL4Z6uISbE0w" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sl-conseil-rh-paie.vercel.app/services.html" />
+  <meta property="og:title" content="Services RH, Paie & Comptabilité – S&L Conseil RH/Paie" />
+  <meta property="og:description" content="Paie, administration RH, conseil stratégique et comptabilité pour indépendants et PME en Île-de-France." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sl-conseil-rh-paie.vercel.app/services.html" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxYTJlNGEiLz4KICA8dGV4dCB4PSIzMiIgeT0iNDQiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iODAwIiBmb250LXNpemU9IjI2IiBmaWxsPSIjZDRhODQzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TTDwvdGV4dD4KPC9zdmc+" />
+  <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxYTJlNGEiLz4KICA8dGV4dCB4PSIzMiIgeT0iNDQiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iODAwIiBmb250LXNpemU9IjI2IiBmaWxsPSIjZDRhODQzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TTDwvdGV4dD4KPC9zdmc+" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:  #1a2e4a;
+      --navy2: #243b5e;
+      --gold:  #d4a843;
+      --gold2: #e8c46a;
+      --white: #ffffff;
+      --light: #f4f7fb;
+      --gray:  #64748b;
+      --dark:  #0f1f33;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--dark); background: var(--white); }
+
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(26,46,74,0.97); backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 68px;
+      border-bottom: 2px solid var(--gold);
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon {
+      width: 38px; height: 38px; background: var(--gold);
+      border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 14px; color: var(--navy);
+    }
+    .logo-text { color: var(--white); font-size: 16px; font-weight: 600; line-height: 1.2; }
+    .logo-sub  { color: var(--gold2); font-size: 11px; }
+    nav ul { list-style: none; display: flex; gap: 8px; align-items: center; }
+    nav ul a {
+      color: rgba(255,255,255,0.85); text-decoration: none;
+      font-size: 14px; font-weight: 500; padding: 6px 14px; border-radius: 6px;
+      transition: all 0.2s;
+    }
+    nav ul a:hover, nav ul a.active { color: var(--gold2); background: rgba(212,168,67,0.12); }
+    .lang-btn {
+      background: var(--gold); color: var(--navy); border: none;
+      padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 700;
+      cursor: pointer; margin-left: 8px; transition: background 0.2s;
+    }
+    .lang-btn:hover { background: var(--gold2); }
+
+    .page-hero {
+      background: linear-gradient(135deg, var(--dark) 0%, var(--navy2) 100%);
+      padding: 130px 5% 70px;
+      text-align: center;
+    }
+    .page-hero-label {
+      color: var(--gold); font-size: 12px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; margin-bottom: 12px;
+    }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 4vw, 52px); color: var(--white); margin-bottom: 16px;
+    }
+    .page-hero p { color: rgba(255,255,255,0.7); font-size: 17px; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+
+    section { padding: 80px 5%; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      color: var(--gold); font-size: 12px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif; font-size: clamp(26px,3vw,38px);
+      color: var(--navy); margin-bottom: 14px; line-height: 1.25;
+    }
+
+    /* ── SERVICE BLOCKS ── */
+    .service-block {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
+      padding: 70px 0; border-bottom: 1px solid #e2e8f0;
+    }
+    .service-block:last-child { border-bottom: none; }
+    .service-block.reverse { direction: rtl; }
+    .service-block.reverse > * { direction: ltr; }
+
+    .sb-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(212,168,67,0.1); border: 1px solid rgba(212,168,67,0.3);
+      color: var(--gold); padding: 5px 14px; border-radius: 20px;
+      font-size: 12px; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; margin-bottom: 16px;
+    }
+    .sb-title {
+      font-family: 'Playfair Display', serif; font-size: clamp(24px,2.5vw,34px);
+      color: var(--navy); margin-bottom: 16px;
+    }
+    .sb-desc { color: var(--gray); font-size: 15px; line-height: 1.75; margin-bottom: 24px; }
+    .sb-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .sb-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 14px; color: var(--dark); line-height: 1.5;
+    }
+    .sb-list li::before { content: '✦'; color: var(--gold); flex-shrink: 0; margin-top: 1px; }
+    .btn-cta {
+      display: inline-block; background: var(--navy); color: var(--white);
+      padding: 12px 26px; border-radius: 8px; font-weight: 600; font-size: 14px;
+      text-decoration: none; transition: all 0.2s;
+    }
+    .btn-cta:hover { background: var(--gold); color: var(--navy); transform: translateY(-2px); }
+
+    .sb-visual {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      border-radius: 20px; padding: 36px; color: white; position: relative; overflow: hidden;
+    }
+    .sb-visual::before {
+      content:''; position: absolute; bottom: -20px; right: -20px;
+      width: 150px; height: 150px; border-radius: 50%;
+      background: rgba(212,168,67,0.1);
+    }
+    .sb-visual-icon { font-size: 48px; margin-bottom: 20px; }
+    .sb-visual h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+    .sb-visual p  { font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.65; margin-bottom: 20px; }
+    .sb-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.85); padding: 4px 12px; border-radius: 20px; font-size: 12px;
+    }
+    .chip.gold { background: rgba(212,168,67,0.2); border-color: var(--gold); color: var(--gold2); }
+
+    /* TARIFS */
+    .pricing-section { background: var(--light); }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 24px; margin-top: 48px; }
+    .pricing-card {
+      background: var(--white); border-radius: 20px; padding: 36px;
+      border: 1px solid #e2e8f0; text-align: center; position: relative;
+      transition: all 0.3s;
+    }
+    .pricing-card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(26,46,74,0.1); }
+    .pricing-card.featured {
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      border-color: var(--gold); color: white;
+    }
+    .pricing-card.featured .pc-name  { color: var(--gold2); }
+    .pricing-card.featured .pc-price { color: var(--white); }
+    .pricing-card.featured .pc-desc  { color: rgba(255,255,255,0.7); }
+    .pricing-card.featured .pc-item  { color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.1); }
+    .featured-badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--gold); color: var(--navy); padding: 3px 16px;
+      border-radius: 20px; font-size: 11px; font-weight: 700; white-space: nowrap;
+    }
+    .pc-icon  { font-size: 36px; margin-bottom: 14px; }
+    .pc-name  { color: var(--navy); font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+    .pc-price { color: var(--gold); font-size: 28px; font-weight: 800; margin-bottom: 4px; }
+    .pc-unit  { font-size: 12px; opacity: 0.65; margin-bottom: 20px; }
+    .pc-desc  { font-size: 13px; color: var(--gray); margin-bottom: 20px; line-height: 1.6; }
+    .pc-list  { list-style: none; margin-bottom: 24px; }
+    .pc-item  { font-size: 13px; padding: 8px 0; border-bottom: 1px solid #f0f0f0; color: var(--dark); text-align: left; display: flex; gap: 8px; }
+    .pc-item::before { content: '✓'; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+    .btn-pricing {
+      display: block; width: 100%; padding: 12px; border-radius: 8px; font-weight: 700;
+      font-size: 14px; text-decoration: none; text-align: center; transition: all 0.2s;
+      background: var(--navy); color: var(--white);
+    }
+    .pricing-card.featured .btn-pricing { background: var(--gold); color: var(--navy); }
+    .btn-pricing:hover { opacity: 0.88; transform: translateY(-1px); }
+
+    .cta-band {
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      text-align: center; padding: 80px 5%;
+    }
+    .cta-band h2 { font-family: 'Playfair Display', serif; font-size: clamp(26px,3vw,38px); color: var(--white); margin-bottom: 14px; }
+    .cta-band p  { color: rgba(255,255,255,0.75); font-size: 16px; margin-bottom: 32px; }
+    .btn-primary {
+      background: var(--gold); color: var(--navy); padding: 14px 32px;
+      border-radius: 8px; font-weight: 700; font-size: 15px; text-decoration: none;
+      transition: all 0.2s; display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gold2); transform: translateY(-2px); }
+
+    footer {
+      background: var(--dark); color: rgba(255,255,255,0.6);
+      padding: 40px 5%; text-align: center; font-size: 13px;
+    }
+    footer a { color: var(--gold2); text-decoration: none; }
+    .footer-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold2); }
+
+    body.en [data-fr] { display: none; }
+    body.fr [data-en] { display: none; }
+
+    @media (max-width: 768px) {
+      .service-block { grid-template-columns: 1fr; }
+      .service-block.reverse { direction: ltr; }
+      nav ul { gap: 2px; }
+      nav ul a { font-size: 12px; padding: 5px 8px; }
+    }
+  </style>
+</head>
+<body class="fr">
+
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon">S&L</div>
+    <div>
+      <div class="logo-text">S&L Conseil</div>
+      <div class="logo-sub">RH / Paie / Comptabilité</div>
+    </div>
+  </a>
+  <ul>
+    <li><a href="index.html"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="services.html" class="active"><span data-fr>Services</span><span data-en>Services</span></a></li>
+    <li><a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a></li>
+    <li><a href="contact.html"><span data-fr>Contact</span><span data-en>Contact</span></a></li>
+    <li><button class="lang-btn" onclick="toggleLang()">EN / FR</button></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-label"><span data-fr>Nos Prestations</span><span data-en>Our Services</span></div>
+  <h1><span data-fr>Services RH, Paie & Comptabilité</span><span data-en>HR, Payroll & Accounting Services</span></h1>
+  <p>
+    <span data-fr>Des solutions complètes et flexibles pour libérer les indépendants et PME des contraintes administratives.</span>
+    <span data-en>Comprehensive, flexible solutions to free independents and SMEs from administrative burdens.</span>
+  </p>
+</div>
+
+<!-- SERVICE BLOCKS -->
+<section>
+  <div class="section-inner">
+
+    <!-- PAIE -->
+    <div class="service-block">
+      <div>
+        <div class="sb-badge">💼 <span data-fr>Gestion de la Paie</span><span data-en>Payroll Management</span></div>
+        <h2 class="sb-title"><span data-fr>Bulletins de paie conformes, zéro stress</span><span data-en>Compliant payslips, zero stress</span></h2>
+        <p class="sb-desc">
+          <span data-fr>Externalisez votre paie à un professionnel certifié (Titre Pro Gestionnaire Paie). Du bulletin mensuel à la DSN, en passant par les charges sociales et les soldes de tout compte — chaque étape gérée avec rigueur et dans les délais.</span>
+          <span data-en>Outsource your payroll to a certified professional (Payroll Manager Professional Title). From monthly payslips to DSN, social charges and final settlements — every step handled rigorously and on time.</span>
+        </p>
+        <ul class="sb-list">
+          <li><span data-fr>Élaboration et contrôle des bulletins de paie</span><span data-en>Payslip preparation and review</span></li>
+          <li><span data-fr>DSN mensuelle (Déclaration Sociale Nominative)</span><span data-en>Monthly DSN (Social Nominative Declaration)</span></li>
+          <li><span data-fr>Charges sociales : URSSAF, mutuelle, prévoyance</span><span data-en>Social charges: URSSAF, health insurance, provident</span></li>
+          <li><span data-fr>Calcul des indemnités de rupture et soldes de tout compte</span><span data-en>Termination indemnity and final settlement calculations</span></li>
+          <li><span data-fr>Gestion des arrêts maladie (AT/MP) et absences</span><span data-en>Sick leave (AT/MP) and absence management</span></li>
+          <li><span data-fr>Attestations : France Travail, certificat de travail</span><span data-en>Certificates: France Travail, employment certificate</span></li>
+        </ul>
+        <a href="contact.html" class="btn-cta"><span data-fr>Demander un devis →</span><span data-en>Request a quote →</span></a>
+      </div>
+      <div class="sb-visual">
+        <div class="sb-visual-icon">💼</div>
+        <h3><span data-fr>Outils maîtrisés</span><span data-en>Tools mastered</span></h3>
+        <p><span data-fr>Traitement de la paie avec les principaux logiciels du marché.</span><span data-en>Payroll processing with the leading market software.</span></p>
+        <div class="sb-chips">
+          <span class="chip gold">SAGE Paie</span>
+          <span class="chip gold">ADP</span>
+          <span class="chip">SuccessFactors</span>
+          <span class="chip">SAP HCM</span>
+          <span class="chip">DSN</span>
+          <span class="chip">URSSAF</span>
+          <span class="chip">DPAE</span>
+        </div>
+        <div style="margin-top:24px; background: rgba(255,255,255,0.06); border-radius:12px; padding:16px;">
+          <div style="font-size:13px; color:rgba(255,255,255,0.6); margin-bottom:6px;">
+            <span data-fr>Certification</span><span data-en>Certification</span>
+          </div>
+          <div style="font-size:14px; color:var(--gold2); font-weight:600;">
+            <span data-fr>Titre Professionnel Gestionnaire Paie</span>
+            <span data-en>Professional Payroll Manager Title</span>
+          </div>
+          <div style="font-size:12px; color:rgba(255,255,255,0.5); margin-top:3px;">Next Formation, Paris — 2025</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADMIN RH -->
+    <div class="service-block reverse">
+      <div>
+        <div class="sb-badge">📋 <span data-fr>Administration RH</span><span data-en>HR Administration</span></div>
+        <h2 class="sb-title"><span data-fr>Gestion administrative, clé en main</span><span data-en>Administrative management, turnkey</span></h2>
+        <p class="sb-desc">
+          <span data-fr>Contrats, embauches, dossiers du personnel, suivi des absences — gérez vos obligations légales sans vous y noyer. S&L Conseil prend en charge l'ensemble des formalités administratives pour que vous puissiez vous concentrer sur votre cœur de métier.</span>
+          <span data-en>Contracts, hires, employee files, absence tracking — manage your legal obligations without drowning in them. S&L Conseil handles all administrative formalities so you can focus on your core business.</span>
+        </p>
+        <ul class="sb-list">
+          <li><span data-fr>Rédaction de contrats de travail (CDD, CDI, alternance…)</span><span data-en>Employment contract drafting (fixed-term, permanent, apprenticeship…)</span></li>
+          <li><span data-fr>DPAE et formalités d'embauche</span><span data-en>DPAE and hiring formalities</span></li>
+          <li><span data-fr>Gestion des dossiers administratifs du personnel</span><span data-en>Employee administrative file management</span></li>
+          <li><span data-fr>Suivi des congés, absences et arrêts maladie</span><span data-en>Leave, absence and sick leave tracking</span></li>
+          <li><span data-fr>Tableaux de bord RH et indicateurs KPI</span><span data-en>HR dashboards and KPI indicators</span></li>
+          <li><span data-fr>Reporting SIRH (SuccessFactors, SAP, QLIK SENSE)</span><span data-en>HRIS reporting (SuccessFactors, SAP, QLIK SENSE)</span></li>
+        </ul>
+        <a href="contact.html" class="btn-cta"><span data-fr>Demander un devis →</span><span data-en>Request a quote →</span></a>
+      </div>
+      <div class="sb-visual" style="background: linear-gradient(135deg, #1e3a5f, #2d5a8e);">
+        <div class="sb-visual-icon">📋</div>
+        <h3><span data-fr>Résultat concret</span><span data-en>Concrete result</span></h3>
+        <p><span data-fr>Automatisation des rapports RH via SIRH chez Bolton Food — réduction de 40 % du temps de reporting.</span><span data-en>Automation of HR reports via HRIS at Bolton Food — 40% reduction in reporting time.</span></p>
+        <div class="sb-chips">
+          <span class="chip gold">−40% reporting</span>
+          <span class="chip">QLIK SENSE</span>
+          <span class="chip">MERCER</span>
+          <span class="chip">Excel TCD</span>
+          <span class="chip">KPI / Tableaux de bord</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONSEIL RH -->
+    <div class="service-block">
+      <div>
+        <div class="sb-badge">🎯 <span data-fr>Conseil RH Stratégique</span><span data-en>Strategic HR Consulting</span></div>
+        <h2 class="sb-title"><span data-fr>Pilotez votre capital humain</span><span data-en>Manage your human capital</span></h2>
+        <p class="sb-desc">
+          <span data-fr>Du recrutement à la gestion des talents, du dialogue social au droit du travail — un accompagnement RH complet et stratégique. Issu d'une formation internationale (France/Italie), Armand apporte une vision européenne de la GRH.</span>
+          <span data-en>From recruitment to talent management, social dialogue to labour law — comprehensive strategic HR support. With international training (France/Italy), Armand brings a European vision of HRM.</span>
+        </p>
+        <ul class="sb-list">
+          <li><span data-fr>GPEC/GEPP : cartographie et développement des compétences</span><span data-en>GPEC/GEPP: skills mapping and development</span></li>
+          <li><span data-fr>Plan de développement des compétences (PDC)</span><span data-en>Skills development plan (PDC)</span></li>
+          <li><span data-fr>Dialogue social : CSE, accords d'entreprise, IRP</span><span data-en>Social dialogue: CSE, company agreements, employee representatives</span></li>
+          <li><span data-fr>Accompagnement en droit du travail et conventions collectives</span><span data-en>Labour law and collective agreements support</span></li>
+          <li><span data-fr>Recrutement : sourcing, entretiens, onboarding</span><span data-en>Recruitment: sourcing, interviews, onboarding</span></li>
+          <li><span data-fr>Qualité de vie au travail (QVT) et bien-être</span><span data-en>Quality of work life (QWL) and wellbeing</span></li>
+        </ul>
+        <a href="contact.html" class="btn-cta"><span data-fr>Demander un devis →</span><span data-en>Request a quote →</span></a>
+      </div>
+      <div class="sb-visual" style="background: linear-gradient(135deg, #0f1f33, #1a2e4a);">
+        <div class="sb-visual-icon">🎯</div>
+        <h3><span data-fr>Expertise CSE & dialogue social</span><span data-en>CSE & social dialogue expertise</span></h3>
+        <p><span data-fr>Co-animation des réunions CSE et organisation des élections du personnel chez Bolton Food (France & Italie).</span><span data-en>Co-facilitation of CSE meetings and staff elections at Bolton Food (France & Italy).</span></p>
+        <div class="sb-chips">
+          <span class="chip gold">90% résolution conflits</span>
+          <span class="chip">IRP / CSE</span>
+          <span class="chip">GPEC</span>
+          <span class="chip">+30% satisfaction</span>
+          <span class="chip">Droit du travail</span>
+        </div>
+        <div style="margin-top:20px; background:rgba(212,168,67,0.1); border:1px solid rgba(212,168,67,0.3); border-radius:10px; padding:14px;">
+          <div style="font-size:12px; color:var(--gold2); font-weight:600;">
+            <span data-fr>🌍 Trilingue : Français · Anglais (B2) · Italien (C1-C2)</span>
+            <span data-en>🌍 Trilingual: French · English (B2) · Italian (C1-C2)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPTA -->
+    <div class="service-block reverse">
+      <div>
+        <div class="sb-badge">📊 <span data-fr>Comptabilité & Gestion Financière</span><span data-en>Accounting & Financial Management</span></div>
+        <h2 class="sb-title"><span data-fr>Vos chiffres, maîtrisés</span><span data-en>Your numbers, under control</span></h2>
+        <p class="sb-desc">
+          <span data-fr>En complément de l'expertise RH/Paie, S&L Conseil propose un suivi comptable de base adapté aux indépendants et PME, en lien avec votre expert-comptable. Actuellement en formation Bachelor Comptabilité (IHECF Paris, 2026-2027).</span>
+          <span data-en>Complementing the HR/Payroll expertise, S&L Conseil offers basic accounting support tailored to independents and SMEs, working alongside your chartered accountant. Currently completing a Bachelor in Accounting (IHECF Paris, 2026-2027).</span>
+        </p>
+        <ul class="sb-list">
+          <li><span data-fr>Suivi comptable de base pour indépendants et TPE</span><span data-en>Basic accounting tracking for independents and micro-businesses</span></li>
+          <li><span data-fr>Préparation des pièces comptables pour l'expert-comptable</span><span data-en>Accounting document preparation for chartered accountants</span></li>
+          <li><span data-fr>Tableaux de bord financiers et reporting</span><span data-en>Financial dashboards and reporting</span></li>
+          <li><span data-fr>Suivi de trésorerie et gestion budgétaire</span><span data-en>Cash flow monitoring and budget management</span></li>
+          <li><span data-fr>Analyse financière et indicateurs de gestion</span><span data-en>Financial analysis and management indicators</span></li>
+        </ul>
+        <a href="contact.html" class="btn-cta"><span data-fr>Demander un devis →</span><span data-en>Request a quote →</span></a>
+      </div>
+      <div class="sb-visual" style="background: linear-gradient(135deg, #1e4a3a, #2d6b55);">
+        <div class="sb-visual-icon">📊</div>
+        <h3><span data-fr>Formation en cours</span><span data-en>Training in progress</span></h3>
+        <p><span data-fr>Renforcement continu des compétences comptables pour offrir un service toujours plus complet.</span><span data-en>Continuous enhancement of accounting skills to offer an ever more comprehensive service.</span></p>
+        <div class="sb-chips">
+          <span class="chip gold">Bachelor Comptabilité IHECF</span>
+          <span class="chip">Excel avancé</span>
+          <span class="chip">Reporting financier</span>
+          <span class="chip">Trésorerie</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TARIFS -->
+<section class="pricing-section">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom: 12px;">
+      <div class="section-label"><span data-fr>Formules</span><span data-en>Packages</span></div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-fr>Des tarifs transparents & flexibles</span>
+        <span data-en>Transparent & flexible pricing</span>
+      </h2>
+      <p style="color:var(--gray); font-size:15px; max-width:520px; margin:0 auto;">
+        <span data-fr>Chaque mission est unique. Ces formules sont des bases — contactez-nous pour un devis personnalisé.</span>
+        <span data-en>Every engagement is unique. These packages are starting points — contact us for a personalised quote.</span>
+      </p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pc-icon">🔹</div>
+        <div class="pc-name"><span data-fr>Essentiel</span><span data-en>Essential</span></div>
+        <div class="pc-price"><span data-fr>Sur devis</span><span data-en>On quote</span></div>
+        <div class="pc-unit"><span data-fr>À partir de 1 salarié</span><span data-en>From 1 employee</span></div>
+        <div class="pc-desc"><span data-fr>Pour les indépendants et micro-entreprises.</span><span data-en>For independents and micro-businesses.</span></div>
+        <ul class="pc-list">
+          <li class="pc-item"><span data-fr>Bulletins de paie mensuels</span><span data-en>Monthly payslips</span></li>
+          <li class="pc-item">DSN mensuelle</li>
+          <li class="pc-item"><span data-fr>Contrats et DPAE</span><span data-en>Contracts and DPAE</span></li>
+          <li class="pc-item"><span data-fr>Suivi des absences</span><span data-en>Absence tracking</span></li>
+        </ul>
+        <a href="contact.html" class="btn-pricing"><span data-fr>Prendre contact</span><span data-en>Get in touch</span></a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="featured-badge">⭐ <span data-fr>Le plus populaire</span><span data-en>Most popular</span></div>
+        <div class="pc-icon">💎</div>
+        <div class="pc-name"><span data-fr>PME Pro</span><span data-en>SME Pro</span></div>
+        <div class="pc-price"><span data-fr>Sur devis</span><span data-en>On quote</span></div>
+        <div class="pc-unit"><span data-fr>5 à 50 salariés</span><span data-en>5 to 50 employees</span></div>
+        <div class="pc-desc"><span data-fr>La formule complète pour les PME en croissance.</span><span data-en>The complete package for growing SMEs.</span></div>
+        <ul class="pc-list">
+          <li class="pc-item"><span data-fr>Paie complète + DSN</span><span data-en>Full payroll + DSN</span></li>
+          <li class="pc-item"><span data-fr>Administration RH complète</span><span data-en>Full HR administration</span></li>
+          <li class="pc-item"><span data-fr>Tableaux de bord KPI</span><span data-en>KPI dashboards</span></li>
+          <li class="pc-item"><span data-fr>Conseil droit du travail</span><span data-en>Labour law advice</span></li>
+          <li class="pc-item">GPEC / GEPP</li>
+        </ul>
+        <a href="contact.html" class="btn-pricing"><span data-fr>Prendre contact</span><span data-en>Get in touch</span></a>
+      </div>
+      <div class="pricing-card">
+        <div class="pc-icon">🚀</div>
+        <div class="pc-name"><span data-fr>Mission ponctuelle</span><span data-en>One-off mission</span></div>
+        <div class="pc-price"><span data-fr>Sur devis</span><span data-en>On quote</span></div>
+        <div class="pc-unit"><span data-fr>Intervention à la demande</span><span data-en>On-demand intervention</span></div>
+        <div class="pc-desc"><span data-fr>Audit, recrutement, dialogue social, projet SIRH…</span><span data-en>Audit, recruitment, social dialogue, HRIS project…</span></div>
+        <ul class="pc-list">
+          <li class="pc-item"><span data-fr>Audit RH et paie</span><span data-en>HR and payroll audit</span></li>
+          <li class="pc-item"><span data-fr>Mission recrutement</span><span data-en>Recruitment mission</span></li>
+          <li class="pc-item"><span data-fr>Projet SIRH / automatisation</span><span data-en>HRIS / automation project</span></li>
+          <li class="pc-item"><span data-fr>Formation équipe RH</span><span data-en>HR team training</span></li>
+        </ul>
+        <a href="contact.html" class="btn-pricing"><span data-fr>Prendre contact</span><span data-en>Get in touch</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <h2><span data-fr>Un projet ? Parlons-en.</span><span data-en>A project? Let's talk.</span></h2>
+  <p><span data-fr>Premier échange gratuit et sans engagement. Réponse sous 24h.</span><span data-en>Free, no-commitment initial consultation. Reply within 24h.</span></p>
+  <a href="contact.html" class="btn-primary"><span data-fr>Contactez-nous →</span><span data-en>Contact us →</span></a>
+</div>
+
+<footer>
+  <div class="section-inner" style="max-width:1200px; margin:0 auto;">
+    <div class="footer-top">
+      <div style="color:var(--white); font-weight:600; font-size:16px;">S&L Conseil RH/Paie</div>
+      <div class="footer-links">
+        <a href="index.html"><span data-fr>Accueil</span><span data-en>Home</span></a>
+        <a href="services.html">Services</a>
+        <a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div>© 2026 S&L Conseil RH/Paie · Armand Stéphane MOMASSO BOULI · <a href="mailto:info-slconseilrh@proton.me">info-slconseilrh@proton.me</a></div>
+  </div>
+</footer>
+
+<script>
+  function toggleLang() {
+    document.body.classList.toggle('en');
+    document.body.classList.toggle('fr');
+  }
+</script>
+</body>
+</html>

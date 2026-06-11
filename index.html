@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S&L Conseil RH/Paie – Freelance RH, Paie & Comptabilité | Île-de-France</title>
+  <meta name="description" content="Consultant freelance RH, Paie et Comptabilité pour indépendants et PME en Île-de-France. Gestion de la paie, DSN, administration RH, conseil stratégique. Armand Stéphane MOMASSO BOULI." />
+  <meta name="keywords" content="consultant RH freelance, gestion paie, DSN, URSSAF, administration RH, PME, indépendants, Île-de-France, Rosny-sous-Bois, SIRH, comptabilité" />
+  <meta name="author" content="Armand Stéphane MOMASSO BOULI" />
+    <meta name="google-site-verification" content="6OkVMW998DL7Skp7Ol39t3DmgtOdneUFL4Z6uISbE0w" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sl-conseil-rh-paie.vercel.app/index.html" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="S&L Conseil RH/Paie – Freelance RH, Paie & Comptabilité" />
+  <meta property="og:description" content="Consultant freelance spécialisé en RH, Paie et Comptabilité pour indépendants et PME en Île-de-France." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sl-conseil-rh-paie.vercel.app/index.html" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxYTJlNGEiLz4KICA8dGV4dCB4PSIzMiIgeT0iNDQiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iODAwIiBmb250LXNpemU9IjI2IiBmaWxsPSIjZDRhODQzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TTDwvdGV4dD4KPC9zdmc+" />
+  <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxYTJlNGEiLz4KICA8dGV4dCB4PSIzMiIgeT0iNDQiIGZvbnQtZmFtaWx5PSJBcmlhbCxzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iODAwIiBmb250LXNpemU9IjI2IiBmaWxsPSIjZDRhODQzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5TTDwvdGV4dD4KPC9zdmc+" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy:   #1a2e4a;
+      --navy2:  #243b5e;
+      --gold:   #d4a843;
+      --gold2:  #e8c46a;
+      --white:  #ffffff;
+      --light:  #f4f7fb;
+      --gray:   #64748b;
+      --dark:   #0f1f33;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: var(--dark); background: var(--white); }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100;
+      background: rgba(26,46,74,0.97); backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 68px;
+      border-bottom: 2px solid var(--gold);
+    }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .logo-icon {
+      width: 38px; height: 38px; background: var(--gold);
+      border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 14px; color: var(--navy); letter-spacing: -0.5px;
+    }
+    .logo-text { color: var(--white); font-size: 16px; font-weight: 600; line-height: 1.2; }
+    .logo-sub  { color: var(--gold2); font-size: 11px; font-weight: 400; }
+    nav ul { list-style: none; display: flex; gap: 8px; align-items: center; }
+    nav ul a {
+      color: rgba(255,255,255,0.85); text-decoration: none;
+      font-size: 14px; font-weight: 500; padding: 6px 14px; border-radius: 6px;
+      transition: all 0.2s;
+    }
+    nav ul a:hover, nav ul a.active { color: var(--gold2); background: rgba(212,168,67,0.12); }
+    .lang-btn {
+      background: var(--gold); color: var(--navy); border: none;
+      padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 700;
+      cursor: pointer; margin-left: 8px; transition: background 0.2s;
+    }
+    .lang-btn:hover { background: var(--gold2); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--navy2) 60%, #2a4a7f 100%);
+      display: flex; align-items: center; padding: 100px 5% 60px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: -50%; right: -10%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(212,168,67,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .hero-badge {
+      display: inline-block; background: rgba(212,168,67,0.15); border: 1px solid var(--gold);
+      color: var(--gold2); padding: 5px 14px; border-radius: 20px; font-size: 12px;
+      font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif; font-size: clamp(36px, 4vw, 54px);
+      color: var(--white); line-height: 1.15; margin-bottom: 18px;
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero-sub { color: rgba(255,255,255,0.75); font-size: 17px; line-height: 1.7; margin-bottom: 32px; }
+    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--gold); color: var(--navy); padding: 13px 28px;
+      border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none;
+      transition: all 0.2s; display: inline-block;
+    }
+    .btn-primary:hover { background: var(--gold2); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,168,67,0.35); }
+    .btn-outline {
+      background: transparent; color: var(--white); padding: 13px 28px;
+      border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none;
+      border: 1.5px solid rgba(255,255,255,0.35); transition: all 0.2s; display: inline-block;
+    }
+    .btn-outline:hover { border-color: var(--gold2); color: var(--gold2); }
+
+    /* hero card */
+    .hero-card {
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px; padding: 36px; backdrop-filter: blur(10px);
+    }
+    .hc-avatar {
+      width: 80px; height: 80px; background: var(--gold); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; font-weight: 800; color: var(--navy); margin-bottom: 18px;
+    }
+    .hc-name { color: var(--white); font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+    .hc-title { color: var(--gold2); font-size: 13px; font-weight: 500; margin-bottom: 20px; }
+    .hc-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .stat {
+      background: rgba(255,255,255,0.06); border-radius: 12px; padding: 14px;
+      text-align: center; border: 1px solid rgba(212,168,67,0.2);
+    }
+    .stat-num { color: var(--gold); font-size: 26px; font-weight: 800; }
+    .stat-label { color: rgba(255,255,255,0.65); font-size: 11px; margin-top: 3px; }
+    .hc-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+    .tag {
+      background: rgba(212,168,67,0.12); color: var(--gold2);
+      padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;
+    }
+
+    /* ── SECTION TEMPLATE ── */
+    section { padding: 90px 5%; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      color: var(--gold); font-size: 12px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif; font-size: clamp(28px, 3vw, 40px);
+      color: var(--navy); margin-bottom: 16px; line-height: 1.25;
+    }
+    .section-desc { color: var(--gray); font-size: 16px; line-height: 1.75; max-width: 580px; }
+
+    /* ── SERVICES PREVIEW ── */
+    .services-section { background: var(--light); }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 50px; }
+    .service-card {
+      background: var(--white); border-radius: 16px; padding: 32px;
+      border: 1px solid #e2e8f0; transition: all 0.3s;
+      position: relative; overflow: hidden;
+    }
+    .service-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(26,46,74,0.12); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .sc-icon {
+      width: 54px; height: 54px; background: linear-gradient(135deg, var(--navy), var(--navy2));
+      border-radius: 14px; display: flex; align-items: center; justify-content: center;
+      font-size: 24px; margin-bottom: 20px;
+    }
+    .sc-title { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .sc-desc { color: var(--gray); font-size: 14px; line-height: 1.65; margin-bottom: 18px; }
+    .sc-link { color: var(--gold); font-size: 13px; font-weight: 600; text-decoration: none; }
+    .sc-link:hover { color: var(--navy); }
+
+    /* ── WHY US ── */
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 0; }
+    .why-list { margin-top: 36px; display: flex; flex-direction: column; gap: 20px; }
+    .why-item { display: flex; gap: 16px; align-items: flex-start; }
+    .why-icon {
+      width: 42px; height: 42px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+    .why-text h4 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .why-text p  { font-size: 13px; color: var(--gray); line-height: 1.6; }
+    .why-visual {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      border-radius: 20px; padding: 40px; color: white;
+    }
+    .metric { margin-bottom: 28px; }
+    .metric-bar-wrap { background: rgba(255,255,255,0.1); border-radius: 8px; height: 8px; margin-top: 8px; }
+    .metric-bar { height: 8px; border-radius: 8px; background: linear-gradient(90deg, var(--gold), var(--gold2)); }
+    .metric-label { font-size: 13px; color: rgba(255,255,255,0.75); display: flex; justify-content: space-between; margin-bottom: 4px; }
+    .metric-label span { color: var(--gold); font-weight: 700; }
+
+    /* ── CTA BAND ── */
+    .cta-band {
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      text-align: center; padding: 80px 5%;
+    }
+    .cta-band h2 { font-family: 'Playfair Display', serif; font-size: clamp(26px,3vw,38px); color: var(--white); margin-bottom: 14px; }
+    .cta-band p  { color: rgba(255,255,255,0.75); font-size: 16px; margin-bottom: 32px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark); color: rgba(255,255,255,0.6);
+      padding: 40px 5%; text-align: center; font-size: 13px;
+    }
+    footer a { color: var(--gold2); text-decoration: none; }
+    .footer-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--gold2); }
+
+    /* ── LANG SWITCH ── */
+    [data-fr], [data-en] { transition: opacity 0.2s; }
+    body.en [data-fr] { display: none; }
+    body.fr [data-en] { display: none; }
+    body.en [data-en] { display: block; }
+    body.fr [data-fr] { display: block; }
+    .inline-fr, .inline-en { display: inline; }
+    body.en .inline-fr { display: none; }
+    body.fr .inline-en { display: none; }
+
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .why-grid  { grid-template-columns: 1fr; }
+      nav ul     { gap: 2px; }
+      nav ul a   { font-size: 12px; padding: 5px 8px; }
+    }
+  </style>
+</head>
+<body class="fr">
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon">S&L</div>
+    <div>
+      <div class="logo-text">S&L Conseil</div>
+      <div class="logo-sub">RH / Paie / Comptabilité</div>
+    </div>
+  </a>
+  <ul>
+    <li><a href="index.html" class="active"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="services.html"><span data-fr>Services</span><span data-en>Services</span></a></li>
+    <li><a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a></li>
+    <li><a href="contact.html"><span data-fr>Contact</span><span data-en>Contact</span></a></li>
+    <li><button class="lang-btn" onclick="toggleLang()">EN / FR</button></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span data-fr>Freelance · Indépendants & PME</span>
+        <span data-en>Freelance · Independents & SMEs</span>
+      </div>
+      <h1>
+        <span data-fr>Expert RH, Paie &<br/><span style="color:var(--gold)">Comptabilité</span><br/>pour votre succès</span>
+        <span data-en>HR, Payroll &<br/><span style="color:var(--gold)">Accounting</span><br/>Expert for your success</span>
+      </h1>
+      <p class="hero-sub">
+        <span data-fr>Des solutions RH et comptables sur mesure pour les indépendants et PME. Bulletins de paie, DSN, administration du personnel, conseil stratégique — externalisez en toute sérénité.</span>
+        <span data-en>Tailored HR and accounting solutions for independents and SMEs. Payslips, DSN, HR administration, strategic advice — outsource with complete peace of mind.</span>
+      </p>
+      <div class="hero-cta">
+        <a href="services.html" class="btn-primary">
+          <span data-fr>Découvrir les services</span>
+          <span data-en>Explore services</span>
+        </a>
+        <a href="contact.html" class="btn-outline">
+          <span data-fr>Prendre rendez-vous</span>
+          <span data-en>Book a consultation</span>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-card">
+        <img src="data:image/jpeg;base64,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" alt="Armand Stéphane MOMASSO BOULI" style="width:80px;height:80px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--gold);margin-bottom:18px;display:block;" />
+        <div class="hc-name">Armand Stéphane MOMASSO BOULI</div>
+        <div class="hc-title">
+          <span data-fr>Consultant Freelance RH / Paie / Comptabilité</span>
+          <span data-en>Freelance HR / Payroll / Accounting Consultant</span>
+        </div>
+        <div class="hc-stats">
+          <div class="stat">
+            <div class="stat-num">3+</div>
+            <div class="stat-label"><span data-fr>ans d'expérience</span><span data-en>years experience</span></div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">−40%</div>
+            <div class="stat-label"><span data-fr>temps de reporting</span><span data-en>reporting time</span></div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">+30%</div>
+            <div class="stat-label"><span data-fr>satisfaction RH</span><span data-en>HR satisfaction</span></div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">90%</div>
+            <div class="stat-label"><span data-fr>résolution conflits</span><span data-en>conflict resolution</span></div>
+          </div>
+        </div>
+        <div class="hc-tags">
+          <span class="tag">DSN</span>
+          <span class="tag">SIRH</span>
+          <span class="tag">GPEC</span>
+          <span class="tag">Droit du travail</span>
+          <span class="tag">SAP · ADP · SAGE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="services-section">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom: 50px;">
+      <div class="section-label">
+        <span data-fr>Nos expertises</span><span data-en>Our expertise</span>
+      </div>
+      <h2 class="section-title" style="margin: 0 auto;">
+        <span data-fr>Des services adaptés à votre réalité</span>
+        <span data-en>Services tailored to your reality</span>
+      </h2>
+      <p class="section-desc" style="margin: 14px auto 0;">
+        <span data-fr>Que vous soyez indépendant, TPE ou PME, S&L Conseil vous accompagne avec des prestations flexibles et sur mesure.</span>
+        <span data-en>Whether you're self-employed, a micro-business or SME, S&L Conseil supports you with flexible, tailored services.</span>
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="sc-icon">💼</div>
+        <div class="sc-title"><span data-fr>Gestion de la Paie</span><span data-en>Payroll Management</span></div>
+        <p class="sc-desc">
+          <span data-fr>Élaboration des bulletins de paie, DSN mensuelle, gestion des charges sociales (URSSAF, mutuelle, prévoyance), soldes de tout compte.</span>
+          <span data-en>Payslip preparation, monthly DSN, social charges management (URSSAF, health, provident), final account settlements.</span>
+        </p>
+        <a href="services.html" class="sc-link"><span data-fr>En savoir plus →</span><span data-en>Learn more →</span></a>
+      </div>
+      <div class="service-card">
+        <div class="sc-icon">📋</div>
+        <div class="sc-title"><span data-fr>Administration RH</span><span data-en>HR Administration</span></div>
+        <p class="sc-desc">
+          <span data-fr>Rédaction de contrats, DPAE, gestion des absences et congés, suivi des arrêts maladie, attestations, tableaux de bord KPI.</span>
+          <span data-en>Contract drafting, DPAE, absence and leave management, sick leave tracking, certificates, KPI dashboards.</span>
+        </p>
+        <a href="services.html" class="sc-link"><span data-fr>En savoir plus →</span><span data-en>Learn more →</span></a>
+      </div>
+      <div class="service-card">
+        <div class="sc-icon">🎯</div>
+        <div class="sc-title"><span data-fr>Conseil RH Stratégique</span><span data-en>Strategic HR Consulting</span></div>
+        <p class="sc-desc">
+          <span data-fr>GPEC/GEPP, plan de développement des compétences, dialogue social, accompagnement juridique, recrutement et onboarding.</span>
+          <span data-en>GPEC/GEPP, skills development plan, social dialogue, legal support, recruitment and onboarding.</span>
+        </p>
+        <a href="services.html" class="sc-link"><span data-fr>En savoir plus →</span><span data-en>Learn more →</span></a>
+      </div>
+      <div class="service-card">
+        <div class="sc-icon">📊</div>
+        <div class="sc-title"><span data-fr>Comptabilité & Gestion</span><span data-en>Accounting & Finance</span></div>
+        <p class="sc-desc">
+          <span data-fr>Suivi comptable pour indépendants et PME, gestion financière, reporting, préparation des éléments pour expert-comptable.</span>
+          <span data-en>Accounting support for independents and SMEs, financial management, reporting, preparation for chartered accountants.</span>
+        </p>
+        <a href="services.html" class="sc-link"><span data-fr>En savoir plus →</span><span data-en>Learn more →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section>
+  <div class="section-inner">
+    <div class="why-grid">
+      <div>
+        <div class="section-label">
+          <span data-fr>Pourquoi nous choisir</span><span data-en>Why choose us</span>
+        </div>
+        <h2 class="section-title">
+          <span data-fr>Une expertise humaine et analytique</span>
+          <span data-en>Human and analytical expertise</span>
+        </h2>
+        <p class="section-desc">
+          <span data-fr>Issu d'une double formation RH et Sciences Sociales avec expérience internationale (France/Italie), Armand allie rigueur technique et sens humain.</span>
+          <span data-en>With dual HR and Social Sciences training and international experience (France/Italy), Armand combines technical rigor with a human-centred approach.</span>
+        </p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon">🌍</div>
+            <div class="why-text">
+              <h4><span data-fr>Trilingue FR / EN / IT</span><span data-en>Trilingual FR / EN / IT</span></h4>
+              <p><span data-fr>Accompagnement possible pour les entreprises et travailleurs étrangers en France.</span><span data-en>Support available for foreign companies and workers in France.</span></p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">⚡</div>
+            <div class="why-text">
+              <h4><span data-fr>Maîtrise des SIRH</span><span data-en>HRIS Expertise</span></h4>
+              <p><span data-fr>SuccessFactors, SAP, ADP, JAGGAER, SAGE — outils de reporting avancés (QLIK SENSE, MERCER).</span><span data-en>SuccessFactors, SAP, ADP, JAGGAER, SAGE — advanced reporting tools (QLIK SENSE, MERCER).</span></p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">🔒</div>
+            <div class="why-text">
+              <h4><span data-fr>Conformité garantie</span><span data-en>Guaranteed compliance</span></h4>
+              <p><span data-fr>Droit du travail, conventions collectives, DSN, RGPD — une veille juridique permanente.</span><span data-en>Labour law, collective agreements, DSN, GDPR — ongoing legal monitoring.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <h3 style="font-size:18px; margin-bottom:28px; font-weight:600;">
+          <span data-fr>Résultats prouvés</span><span data-en>Proven results</span>
+        </h3>
+        <div class="metric">
+          <div class="metric-label">
+            <span data-fr>Réduction du temps de reporting</span><span data-en>Reporting time reduction</span>
+            <span>40%</span>
+          </div>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="width:40%"></div></div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">
+            <span data-fr>Satisfaction employés</span><span data-en>Employee satisfaction</span>
+            <span>+30%</span>
+          </div>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="width:75%"></div></div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">
+            <span data-fr>Résolution conflits CSE</span><span data-en>CSE conflict resolution</span>
+            <span>90%</span>
+          </div>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="width:90%"></div></div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">
+            <span data-fr>Maîtrise des outils SIRH</span><span data-en>HRIS tools proficiency</span>
+            <span>95%</span>
+          </div>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="width:95%"></div></div>
+        </div>
+        <div style="margin-top:28px; padding-top:24px; border-top: 1px solid rgba(255,255,255,0.15);">
+          <div style="font-size:13px; color:rgba(255,255,255,0.6); margin-bottom:10px;">
+            <span data-fr>Formations & Certifications</span><span data-en>Education & Certifications</span>
+          </div>
+          <div style="font-size:13px; color:rgba(255,255,255,0.9); line-height:1.8;">
+            ✅ <span data-fr>Titre Pro Gestionnaire Paie</span><span data-en>Payroll Manager Professional Title</span><br/>
+            ✅ Master RH — ISTUD Business School, Milan<br/>
+            ✅ <span data-fr>Bachelor Comptabilité (en cours)</span><span data-en>Accounting Bachelor (in progress)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="section-inner" style="padding:0;">
+    <h2>
+      <span data-fr>Prêt à externaliser votre RH et paie ?</span>
+      <span data-en>Ready to outsource your HR and payroll?</span>
+    </h2>
+    <p>
+      <span data-fr>Contactez S&L Conseil pour un premier échange gratuit et sans engagement.</span>
+      <span data-en>Contact S&L Conseil for a free, no-commitment initial consultation.</span>
+    </p>
+    <a href="contact.html" class="btn-primary" style="font-size:15px; padding:15px 36px;">
+      <span data-fr>Prendre contact →</span>
+      <span data-en>Get in touch →</span>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="section-inner">
+    <div class="footer-top">
+      <div style="color:var(--white); font-weight:600; font-size:16px;">S&L Conseil RH/Paie</div>
+      <div class="footer-links">
+        <a href="index.html"><span data-fr>Accueil</span><span data-en>Home</span></a>
+        <a href="services.html">Services</a>
+        <a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div>
+      © 2026 S&L Conseil RH/Paie · Armand Stéphane MOMASSO BOULI · Rosny-sous-Bois (93) ·
+      <a href="mailto:info-slconseilrh@proton.me">info-slconseilrh@proton.me</a> · 07 80 70 41 52
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleLang() {
+    document.body.classList.toggle('en');
+    document.body.classList.toggle('fr');
+  }
+  // ensure inline span visibility
+  document.querySelectorAll('[data-fr],[data-en]').forEach(el => {
+    el.style.display = '';
+  });
+</script>
+</body>
+</html>
