@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – S&L Conseil RH/Paie | Consultant RH Freelance Île-de-France</title>
+  <meta name="description" content="Contactez S&L Conseil RH/Paie pour toute mission RH, paie ou comptabilité. Réponse sous 24h. Disponible pour indépendants et PME en Île-de-France et à distance." />
+  <meta name="keywords" content="contact consultant RH freelance, devis paie, mission RH ponctuelle, Île-de-France" />
+  <meta name="author" content="Armand Stéphane MOMASSO BOULI" />
+  <meta name="google-site-verification" content="6OkVMW998DL7Skp7Ol39t3DmgtOdneUFL4Z6uISbE0w" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sl-conseil-rh-paie.vercel.app/contact.html" />
+  <meta property="og:title" content="Contact – S&L Conseil RH/Paie" />
+  <meta property="og:description" content="Contactez votre consultant freelance RH, Paie et Comptabilité. Disponible pour indépendants et PME, réponse sous 24h." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sl-conseil-rh-paie.vercel.app/contact.html" />
+  <meta property="og:image" content="https://sl-conseil-rh-paie.vercel.app/armand.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxQjNBNkIiLz48dGV4dCB4PSI1MCUiIHk9IjU0JSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNDNDkzMkEiPlMmTDwvdGV4dD48L3N2Zz4=" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── CONTACT ── */
+    .contact-section { padding: 80px 5%; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 60px; align-items: start; }
+
+    .info-title { font-family: 'Playfair Display', serif; font-size: clamp(24px,2.5vw,34px); color: var(--navy); margin-bottom: 14px; }
+    .info-desc  { color: var(--gray); font-size: 15px; line-height: 1.75; margin-bottom: 36px; }
+
+    .contact-cards { display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
+    .cc {
+      display: flex; align-items: center; gap: 16px;
+      background: var(--light); border-radius: 14px; padding: 18px;
+      border: 1px solid #e2e8f0; transition: all 0.2s;
+    }
+    .cc:hover { border-color: var(--gold); box-shadow: 0 4px 16px rgba(196,147,42,0.12); }
+    .cc-icon {
+      width: 44px; height: 44px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+    .cc-label { font-size: 12px; color: var(--gray); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+    .cc-value { font-size: 15px; font-weight: 600; color: var(--navy); }
+    .cc-value a { color: var(--navy); text-decoration: none; }
+    .cc-value a:hover { color: var(--burg); }
+
+    .availability {
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      border-radius: 16px; padding: 24px; color: var(--white);
+    }
+    .av-title { font-size: 15px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+    .av-dot { width: 8px; height: 8px; background: #4ade80; border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+    .av-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 13px; }
+    .av-item:last-child { border: none; }
+    .av-status         { background: rgba(74,222,128,0.15); color: #4ade80; padding: 2px 10px; border-radius: 10px; font-size: 11px; font-weight: 700; }
+    .av-status.partial { background: rgba(196,147,42,0.2); color: var(--gold2); }
+
+    /* ── FORMULAIRE ── */
+    .form-card {
+      background: var(--white); border-radius: 24px; padding: 44px;
+      border: 1px solid #e2e8f0; box-shadow: 0 8px 32px rgba(27,58,107,0.08);
+    }
+    .form-title { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--navy); margin-bottom: 6px; }
+    .form-sub   { color: var(--gray); font-size: 14px; margin-bottom: 30px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 20px; }
+    label { display: block; font-size: 13px; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+    label .req { color: var(--burg); }
+    input, select, textarea {
+      width: 100%; padding: 12px 16px; border: 1.5px solid #e2e8f0;
+      border-radius: 10px; font-size: 14px; font-family: 'Inter', sans-serif;
+      color: var(--dark); background: var(--white); transition: border 0.2s; outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--navy); box-shadow: 0 0 0 3px rgba(27,58,107,0.1);
+    }
+    textarea { resize: vertical; min-height: 120px; }
+    select { cursor: pointer; }
+
+    .form-services { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
+    .service-check { position: absolute; opacity: 0; pointer-events: none; }
+    .service-label {
+      display: flex; align-items: center; gap: 8px; padding: 10px 14px;
+      border: 1.5px solid #e2e8f0; border-radius: 10px; cursor: pointer;
+      font-size: 13px; font-weight: 500; color: var(--navy); transition: all 0.2s;
+    }
+    .service-label::before { content: '○'; color: #ccc; font-size: 14px; transition: all 0.2s; }
+    .service-check:checked + .service-label { border-color: var(--burg); background: rgba(123,28,58,0.06); }
+    .service-check:checked + .service-label::before { content: '●'; color: var(--burg); }
+
+    .gdpr-row { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 24px; }
+    .gdpr-row input[type="checkbox"] { width: auto; margin-top: 2px; accent-color: var(--navy); }
+    .gdpr-text { font-size: 12px; color: var(--gray); line-height: 1.5; }
+
+    .btn-submit {
+      width: 100%; padding: 15px;
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      color: var(--white); border: none; border-radius: 10px;
+      font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.2s;
+      font-family: 'Inter', sans-serif;
+    }
+    .btn-submit:hover {
+      background: linear-gradient(135deg, var(--burg), var(--burg2));
+      transform: translateY(-2px); box-shadow: 0 8px 24px rgba(123,28,58,0.25);
+    }
+    .btn-submit:disabled { cursor: not-allowed; }
+
+    .success-msg {
+      display: none; background: rgba(74,222,128,0.1);
+      border: 1px solid rgba(74,222,128,0.4); border-radius: 12px;
+      padding: 20px; text-align: center; margin-top: 20px;
+      color: #166534; font-size: 15px; font-weight: 600;
+    }
+    .error-msg {
+      display: none; background: rgba(239,68,68,0.08);
+      border: 1px solid rgba(239,68,68,0.35); border-radius: 12px;
+      padding: 16px; text-align: center; margin-top: 16px;
+      color: #991b1b; font-size: 14px;
+    }
+
+    /* ── FAQ ── */
+    .faq-section { background: var(--light); padding: 80px 5%; }
+    .faq-grid    { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 20px; margin-top: 48px; }
+    .faq-item    { background: var(--white); border-radius: 14px; padding: 24px; border: 1px solid #e2e8f0; border-left: 3px solid var(--gold); }
+    .faq-q       { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .faq-a       { font-size: 13px; color: var(--gray); line-height: 1.65; }
+
+    /* Note Formspree */
+    .formspree-note {
+      background: rgba(196,147,42,0.08); border: 1px solid rgba(196,147,42,0.3);
+      border-radius: 10px; padding: 12px 16px; margin-bottom: 20px;
+      font-size: 12px; color: var(--gray); line-height: 1.5;
+    }
+    .formspree-note strong { color: var(--navy); }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row     { grid-template-columns: 1fr; }
+      .form-services{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="fr">
+
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon">S&amp;L</div>
+    <div>
+      <div class="logo-text">S&amp;L Conseil</div>
+      <div class="logo-sub">RH / Paie / Comptabilité</div>
+    </div>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
+    <li><a href="index.html"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="services.html"><span data-fr>Services</span><span data-en>Services</span></a></li>
+    <li><a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-label">Contact</div>
+  <h1><span data-fr>Parlons de votre projet</span><span data-en>Let's talk about your project</span></h1>
+  <p>
+    <span data-fr>Premier échange gratuit et sans engagement. Réponse garantie sous 24h ouvrées.</span>
+    <span data-en>Free, no-commitment initial consultation. Response guaranteed within 24 business hours.</span>
+  </p>
+</div>
+
+<section class="contact-section">
+  <div class="section-inner">
+    <div class="contact-grid">
+
+      <!-- INFO -->
+      <div>
+        <h2 class="info-title">
+          <span data-fr>Restons en contact</span>
+          <span data-en>Let's stay in touch</span>
+        </h2>
+        <p class="info-desc">
+          <span data-fr>Que vous ayez besoin d'un accompagnement régulier ou d'une mission ponctuelle, S&amp;L Conseil est à votre écoute.</span>
+          <span data-en>Whether you need ongoing support or a one-off mission, S&amp;L Conseil is here to listen.</span>
+        </p>
+
+        <div class="contact-cards">
+          <div class="cc">
+            <div class="cc-icon" aria-hidden="true">✉️</div>
+            <div>
+              <div class="cc-label">Email</div>
+              <div class="cc-value"><a href="mailto:info-slconseilrh@proton.me">info-slconseilrh@proton.me</a></div>
+            </div>
+          </div>
+          <div class="cc">
+            <div class="cc-icon" aria-hidden="true">📱</div>
+            <div>
+              <div class="cc-label"><span data-fr>Téléphone</span><span data-en>Phone</span></div>
+              <div class="cc-value"><a href="tel:+33780704152">07 80 70 41 52</a></div>
+            </div>
+          </div>
+          <div class="cc">
+            <div class="cc-icon" aria-hidden="true">📍</div>
+            <div>
+              <div class="cc-label"><span data-fr>Localisation</span><span data-en>Location</span></div>
+              <div class="cc-value">Paris, Île-de-France &amp; <span data-fr>télétravail</span><span data-en>remote</span></div>
+            </div>
+          </div>
+          <div class="cc">
+            <div class="cc-icon" aria-hidden="true">🌍</div>
+            <div>
+              <div class="cc-label"><span data-fr>Langues de travail</span><span data-en>Working languages</span></div>
+              <div class="cc-value">Français · English · Italiano</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="availability">
+          <div class="av-title"><div class="av-dot"></div><span data-fr>Disponibilités</span><span data-en>Availability</span></div>
+          <div class="av-item">
+            <span><span data-fr>Missions freelance</span><span data-en>Freelance missions</span></span>
+            <span class="av-status"><span data-fr>Disponible</span><span data-en>Available</span></span>
+          </div>
+          <div class="av-item">
+            <span><span data-fr>Gestion paie mensuelle</span><span data-en>Monthly payroll</span></span>
+            <span class="av-status"><span data-fr>Disponible</span><span data-en>Available</span></span>
+          </div>
+          <div class="av-item">
+            <span><span data-fr>Missions ponctuelles RH</span><span data-en>One-off HR missions</span></span>
+            <span class="av-status"><span data-fr>Disponible</span><span data-en>Available</span></span>
+          </div>
+          <div class="av-item">
+            <span><span data-fr>Présentiel Paris / IDF</span><span data-en>On-site Paris / IDF</span></span>
+            <span class="av-status partial"><span data-fr>Sur demande</span><span data-en>On request</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <div class="form-card">
+        <div class="form-title"><span data-fr>Envoyez-moi un message</span><span data-en>Send me a message</span></div>
+        <div class="form-sub"><span data-fr>Les champs marqués * sont obligatoires.</span><span data-en>Fields marked * are required.</span></div>
+
+        <form id="contactForm" action="https://formspree.io/f/xkolzqyg" method="POST">
+          <!-- Champs cachés Formspree -->
+          <input type="hidden" name="_subject" value="Nouveau message – S&L Conseil RH/Paie" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom"><span data-fr>Prénom</span><span data-en>First name</span> <span class="req">*</span></label>
+              <input type="text" id="prenom" name="prenom" required placeholder="Jean" />
+            </div>
+            <div class="form-group">
+              <label for="nom"><span data-fr>Nom</span><span data-en>Last name</span> <span class="req">*</span></label>
+              <input type="text" id="nom" name="nom" required placeholder="Dupont" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="jean.dupont@email.com" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telephone"><span data-fr>Téléphone</span><span data-en>Phone</span></label>
+              <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" />
+            </div>
+            <div class="form-group">
+              <label for="structure"><span data-fr>Type de structure</span><span data-en>Organisation type</span></label>
+              <select id="structure" name="structure">
+                <option value=""><span data-fr>Choisir…</span><span data-en>Choose…</span></option>
+                <option value="independant"><span data-fr>Indépendant / Freelance</span><span data-en>Independent / Freelance</span></option>
+                <option value="tpe">TPE (1–9 salariés)</option>
+                <option value="pme">PME (10–249 salariés)</option>
+                <option value="association">Association</option>
+                <option value="autre"><span data-fr>Autre</span><span data-en>Other</span></option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label><span data-fr>Service(s) souhaité(s)</span><span data-en>Service(s) needed</span></label>
+            <div class="form-services">
+              <div>
+                <input class="service-check" type="checkbox" id="s1" name="service_paie" value="Gestion de la Paie" />
+                <label class="service-label" for="s1"><span data-fr>Gestion de la Paie</span><span data-en>Payroll</span></label>
+              </div>
+              <div>
+                <input class="service-check" type="checkbox" id="s2" name="service_rh" value="Administration RH" />
+                <label class="service-label" for="s2"><span data-fr>Administration RH</span><span data-en>HR Administration</span></label>
+              </div>
+              <div>
+                <input class="service-check" type="checkbox" id="s3" name="service_conseil" value="Conseil RH Stratégique" />
+                <label class="service-label" for="s3"><span data-fr>Conseil RH Stratégique</span><span data-en>Strategic HR</span></label>
+              </div>
+              <div>
+                <input class="service-check" type="checkbox" id="s4" name="service_compta" value="Comptabilité & Gestion" />
+                <label class="service-label" for="s4"><span data-fr>Comptabilité &amp; Gestion</span><span data-en>Accounting</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message"><span data-fr>Votre message</span><span data-en>Your message</span> <span class="req">*</span></label>
+            <textarea id="message" name="message" required placeholder="Décrivez votre besoin, le nombre de salariés, vos contraintes particulières…"></textarea>
+          </div>
+
+          <div class="gdpr-row">
+            <input type="checkbox" id="gdpr" name="gdpr" required />
+            <label class="gdpr-text" for="gdpr">
+              <span data-fr>J'accepte que mes données soient utilisées pour me recontacter dans le cadre de ma demande. Aucune donnée ne sera transmise à des tiers. <a href="politique-confidentialite.html">Politique de confidentialité</a>.</span>
+              <span data-en>I agree that my data may be used to contact me regarding my request. No data will be shared with third parties. <a href="politique-confidentialite.html">Privacy policy</a>.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <span data-fr>Envoyer ma demande →</span>
+            <span data-en>Send my request →</span>
+          </button>
+        </form>
+
+        <div class="success-msg" id="successMsg">
+          ✅ <span data-fr>Message envoyé ! Armand vous répondra sous 24h ouvrées.</span>
+          <span data-en>Message sent! Armand will reply within 24 business hours.</span>
+        </div>
+        <div class="error-msg" id="errorMsg">
+          ⚠️ <span data-fr>Une erreur est survenue. Merci de contacter directement : <a href="mailto:info-slconseilrh@proton.me">info-slconseilrh@proton.me</a></span>
+          <span data-en>An error occurred. Please contact directly: <a href="mailto:info-slconseilrh@proton.me">info-slconseilrh@proton.me</a></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="section-inner">
+    <div style="text-align:center;">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-fr>Questions fréquentes</span>
+        <span data-en>Frequently asked questions</span>
+      </h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-q"><span data-fr>Intervenez-vous à distance ?</span><span data-en>Do you work remotely?</span></div>
+        <div class="faq-a"><span data-fr>Oui, la majorité des missions se font à distance (email, visio, outils cloud). Des déplacements en Île-de-France sont possibles selon la mission.</span><span data-en>Yes, most missions are handled remotely (email, video call, cloud tools). On-site visits in Île-de-France are possible depending on the mission.</span></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-fr>Quels secteurs d'activité ?</span><span data-en>Which business sectors?</span></div>
+        <div class="faq-a"><span data-fr>Tous secteurs. Expérience particulière dans l'agroalimentaire (Bolton Food/Saupiquet), la santé sociale (Italie) et les services.</span><span data-en>All sectors. Particular experience in food industry (Bolton Food/Saupiquet), social healthcare (Italy) and services.</span></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-fr>Quel délai pour démarrer ?</span><span data-en>How quickly can you start?</span></div>
+        <div class="faq-a"><span data-fr>Généralement sous 1 semaine après signature du contrat de prestation. Contact et devis sous 24h.</span><span data-en>Generally within 1 week after signing the service agreement. Contact and quote within 24h.</span></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-fr>Proposez-vous des contrats longue durée ?</span><span data-en>Do you offer long-term contracts?</span></div>
+        <div class="faq-a"><span data-fr>Oui — prestations mensuelles récurrentes (paie, admin RH) ou missions ponctuelles. Des formules d'abonnement sont disponibles.</span><span data-en>Yes — recurring monthly services (payroll, HR admin) or one-off missions. Subscription packages are available.</span></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-fr>Travaillez-vous avec mes logiciels ?</span><span data-en>Can you work with my existing software?</span></div>
+        <div class="faq-a"><span data-fr>Oui. Maîtrise de SAGE, ADP, SAP, SuccessFactors, JAGGAER et adaptation rapide à tout nouveau SIRH.</span><span data-en>Yes. Proficient in SAGE, ADP, SAP, SuccessFactors, JAGGAER and quick to adapt to any new HRIS.</span></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-fr>Accompagnez-vous les entreprises étrangères ?</span><span data-en>Do you support foreign companies?</span></div>
+        <div class="faq-a"><span data-fr>Oui — trilingue français/anglais/italien, avec une expérience directe en contexte franco-italien (Bolton Food).</span><span data-en>Yes — trilingual French/English/Italian, with direct experience in a Franco-Italian context (Bolton Food).</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="section-inner" style="max-width:1200px; margin:0 auto;">
+    <div class="footer-top">
+      <div style="color:var(--white); font-weight:600; font-size:16px;">S&amp;L Conseil RH/Paie</div>
+      <div class="footer-links">
+        <a href="index.html"><span data-fr>Accueil</span><span data-en>Home</span></a>
+        <a href="services.html"><span data-fr>Services</span><span data-en>Services</span></a>
+        <a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html"><span data-fr>Mentions légales</span><span data-en>Legal</span></a>
+        <a href="politique-confidentialite.html"><span data-fr>Confidentialité</span><span data-en>Privacy</span></a>
+      </div>
+    </div>
+    <div>© 2026 S&amp;L Conseil RH/Paie · Paris, Île-de-France · <a href="mailto:info-slconseilrh@proton.me">info-slconseilrh@proton.me</a> · 07 80 70 41 52</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

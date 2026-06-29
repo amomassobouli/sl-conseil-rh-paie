@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <!-- Icon 1: Payroll (Briefcase + Chart) -->
+  <g id="payroll">
+    <rect x="10" y="20" width="40" height="35" rx="3" fill="#d4a843" opacity="0.2"/>
+    <path d="M 20 20 L 20 15 Q 20 12 23 12 L 47 12 Q 50 12 50 15 L 50 20" stroke="#d4a843" stroke-width="2" fill="none"/>
+    <rect x="20" y="20" width="30" height="35" stroke="#d4a843" stroke-width="2" fill="none" rx="2"/>
+    <line x1="25" y1="30" x2="45" y2="30" stroke="#d4a843" stroke-width="1"/>
+    <line x1="25" y1="37" x2="45" y2="37" stroke="#d4a843" stroke-width="1"/>
+    <line x1="25" y1="44" x2="40" y2="44" stroke="#d4a843" stroke-width="1"/>
+  </g>
+  
+  <!-- Icon 2: Administration (Document + Checkmark) -->
+  <g id="admin">
+    <rect x="120" y="15" width="30" height="45" stroke="#d4a843" stroke-width="2" fill="none" rx="2"/>
+    <line x1="125" y1="25" x2="145" y2="25" stroke="#d4a843" stroke-width="1"/>
+    <line x1="125" y1="32" x2="145" y2="32" stroke="#d4a843" stroke-width="1"/>
+    <line x1="125" y1="39" x2="140" y2="39" stroke="#d4a843" stroke-width="1"/>
+    <path d="M 128 48 L 133 53 L 142 44" stroke="#d4a843" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Icon 3: Strategy (Target) -->
+  <g id="strategy">
+    <circle cx="235" cy="37" r="20" stroke="#d4a843" stroke-width="2" fill="none"/>
+    <circle cx="235" cy="37" r="14" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+    <circle cx="235" cy="37" r="8" stroke="#d4a843" stroke-width="2" fill="#d4a843" opacity="0.3"/>
+    <circle cx="235" cy="37" r="3" fill="#d4a843"/>
+  </g>
+  
+  <!-- Icon 4: Accounting (Chart with uptrend) -->
+  <g id="accounting">
+    <rect x="320" y="48" width="8" height="18" fill="#d4a843" opacity="0.5"/>
+    <rect x="332" y="40" width="8" height="26" fill="#d4a843" opacity="0.7"/>
+    <rect x="344" y="30" width="8" height="36" fill="#d4a843"/>
+    <polyline points="320,48 332,40 344,30" stroke="#d4a843" stroke-width="2" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S&L Conseil RH/Paie – Freelance RH, Paie & Comptabilité | Île-de-France</title>
+  <meta name="description" content="Consultant freelance RH, Paie et Comptabilité pour indépendants et PME en Île-de-France. Gestion de la paie, DSN, administration RH, conseil stratégique." />
+  <meta name="keywords" content="consultant RH freelance, gestion paie, DSN, URSSAF, administration RH, PME, indépendants, Île-de-France, Rosny-sous-Bois, SIRH, comptabilité" />
+  <meta name="author" content="Armand Stéphane MOMASSO BOULI" />
+  <meta name="google-site-verification" content="6OkVMW998DL7Skp7Ol39t3DmgtOdneUFL4Z6uISbE0w" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sl-conseil-rh-paie.vercel.app/" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="S&L Conseil RH/Paie – Freelance RH, Paie & Comptabilité" />
+  <meta property="og:description" content="Consultant freelance spécialisé en RH, Paie et Comptabilité pour indépendants et PME en Île-de-France." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sl-conseil-rh-paie.vercel.app/" />
+  <meta property="og:image" content="https://sl-conseil-rh-paie.vercel.app/armand.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "S&L Conseil RH/Paie",
+    "image": "https://sl-conseil-rh-paie.vercel.app/armand.jpg",
+    "description": "Consultant freelance RH, Paie et Comptabilité pour indépendants et PME en Île-de-France",
+    "url": "https://sl-conseil-rh-paie.vercel.app/",
+    "telephone": "+33780704152",
+    "email": "info-slconseilrh@proton.me",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rosny-sous-Bois",
+      "postalCode": "93110",
+      "addressCountry": "FR"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "telephone": "+33780704152",
+      "availableLanguage": ["fr","en","it"]
+    },
+    "areaServed": "Île-de-France",
+    "serviceType": ["HR Consulting","Payroll Management","Accounting"]
+  }
+  </script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxQjNBNkIiLz48dGV4dCB4PSI1MCUiIHk9IjU0JSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNDNDkzMkEiPlMmTDwvdGV4dD48L3N2Zz4=" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <!-- CSS partagé -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--navy) 55%, var(--navy2) 100%);
+      display: flex; align-items: center; padding: 100px 5% 60px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: -50%; right: -10%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(123,28,58,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-inner {
+      max-width: 1200px; margin: 0 auto; width: 100%;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(123,28,58,0.2); border: 1px solid var(--burg2);
+      color: #e8a0b4; padding: 5px 14px; border-radius: 20px;
+      font-size: 12px; font-weight: 600; letter-spacing: 1px;
+      text-transform: uppercase; margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif; font-size: clamp(36px,4vw,54px);
+      color: var(--white); line-height: 1.15; margin-bottom: 18px;
+    }
+    .hero h1 span { color: var(--gold2); }
+    .hero-sub { color: rgba(255,255,255,0.78); font-size: 17px; line-height: 1.7; margin-bottom: 32px; }
+    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* Hero card */
+    .hero-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 20px; padding: 36px; backdrop-filter: blur(10px);
+    }
+    .hc-avatar {
+      width: 80px; height: 80px; border-radius: 50%; overflow: hidden;
+      border: 3px solid var(--gold); margin-bottom: 18px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--burg); font-size: 28px; font-weight: 800; color: var(--white);
+    }
+    .hc-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .hc-name  { color: var(--white); font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+    .hc-title { color: var(--gold2); font-size: 13px; font-weight: 500; margin-bottom: 20px; }
+    .hc-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .stat {
+      background: rgba(255,255,255,0.06); border-radius: 12px; padding: 14px;
+      text-align: center; border: 1px solid rgba(196,147,42,0.25);
+    }
+    .stat-num   { color: var(--gold2); font-size: 26px; font-weight: 800; }
+    .stat-label { color: rgba(255,255,255,0.62); font-size: 11px; margin-top: 3px; }
+    .hc-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+    .tag {
+      background: rgba(123,28,58,0.2); color: #e8a0b4;
+      border: 1px solid rgba(158,45,80,0.4);
+      padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 500;
+    }
+
+    /* ── SERVICES ── */
+    .services-section { background: var(--light); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+      gap: 24px; margin-top: 50px;
+    }
+    .service-card {
+      background: var(--white); border-radius: 16px; padding: 32px;
+      border: 1px solid #e2e8f0; transition: all 0.3s;
+      position: relative; overflow: hidden;
+    }
+    .service-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: linear-gradient(90deg, var(--burg), var(--gold));
+      transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+    }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(27,58,107,0.13); }
+    .service-card:hover::before { transform: scaleX(1); }
+    .sc-icon {
+      width: 54px; height: 54px;
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      border-radius: 14px; display: flex; align-items: center; justify-content: center;
+      font-size: 24px; margin-bottom: 20px;
+    }
+    .sc-title { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .sc-desc  { color: var(--gray); font-size: 14px; line-height: 1.65; margin-bottom: 18px; }
+    .sc-link  { color: var(--burg); font-size: 13px; font-weight: 600; text-decoration: none; }
+    .sc-link:hover { color: var(--navy); }
+
+    /* ── ACQUISITION ── */
+    .acquisition-section {
+      background: linear-gradient(135deg, #f4f7fb 0%, #ffffff 100%);
+      border-top: 3px solid var(--gold);
+    }
+    .acquisition-inner { display: grid; grid-template-columns: 1fr; gap: 50px; max-width: 1200px; margin: 0 auto; }
+    .acq-header { text-align: center; margin-bottom: 20px; }
+    .acq-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, rgba(196,147,42,0.18), rgba(212,168,67,0.12));
+      border: 1.5px solid var(--gold); color: var(--navy);
+      padding: 8px 18px; border-radius: 25px; font-size: 12px; font-weight: 700;
+      letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 18px;
+    }
+    .acq-title {
+      font-family: 'Playfair Display', serif; font-size: clamp(30px,3vw,42px);
+      color: var(--navy); line-height: 1.2; margin-bottom: 12px;
+    }
+    .acq-subtitle { font-size: 16px; color: var(--burg); font-weight: 600; letter-spacing: 0.5px; margin-bottom: 20px; }
+    .acq-intro { max-width: 700px; margin: 0 auto; color: var(--gray); font-size: 15px; line-height: 1.8; }
+    .acq-content { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; margin-top: 50px; }
+    .acq-left { display: flex; flex-direction: column; gap: 28px; }
+
+    .acq-included, .acq-benefits, .acq-process {
+      background: var(--white); border-radius: 16px; padding: 32px;
+      border: 1px solid #e2e8f0; box-shadow: 0 4px 16px rgba(27,58,107,0.06);
+    }
+    .acq-included-title, .acq-benefits-title, .acq-process-title {
+      font-size: 17px; font-weight: 700; color: var(--navy);
+      margin-bottom: 22px; display: flex; align-items: center; gap: 10px;
+    }
+
+    .included-list { display: flex; flex-direction: column; gap: 12px; }
+    .included-item {
+      display: flex; gap: 12px; align-items: flex-start; padding: 12px;
+      background: linear-gradient(135deg, rgba(27,58,107,0.05), rgba(30,77,140,0.04));
+      border-radius: 10px; border-left: 3px solid var(--navy);
+    }
+    .included-bullet {
+      width: 6px; height: 6px; background: var(--navy); border-radius: 50%;
+      flex-shrink: 0; margin-top: 8px;
+    }
+    .included-text { color: var(--gray); font-size: 14px; line-height: 1.6; }
+    .included-highlight { color: var(--navy); font-weight: 600; }
+
+    .benefit-list { display: flex; flex-direction: column; gap: 14px; }
+    .benefit-item { display: flex; gap: 12px; align-items: flex-start; }
+    .benefit-check {
+      width: 24px; height: 24px;
+      background: linear-gradient(135deg, var(--burg), var(--burg2));
+      border-radius: 6px; display: flex; align-items: center; justify-content: center;
+      color: var(--white); font-weight: 700; font-size: 13px; flex-shrink: 0; margin-top: 1px;
+    }
+    .benefit-text { color: var(--gray); font-size: 14px; line-height: 1.6; }
+
+    .process-steps { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+    .process-step {
+      background: linear-gradient(135deg, rgba(27,58,107,0.06), rgba(30,77,140,0.04));
+      border-radius: 12px; padding: 20px; border-left: 3px solid var(--gold);
+    }
+    .step-number {
+      width: 32px; height: 32px;
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy); border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 14px; margin-bottom: 10px;
+    }
+    .step-name { font-weight: 700; color: var(--navy); font-size: 14px; margin-bottom: 6px; }
+    .step-desc { font-size: 12px; color: var(--gray); line-height: 1.6; }
+
+    .acq-interventions {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      border-radius: 16px; padding: 36px; color: var(--white); margin-top: 28px;
+    }
+    .acq-int-title {
+      font-size: 17px; font-weight: 700; color: var(--gold2);
+      margin-bottom: 22px; display: flex; align-items: center; gap: 10px;
+    }
+    .intervention-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+    .intervention-tag {
+      background: rgba(196,147,42,0.15); border: 1px solid rgba(196,147,42,0.4);
+      color: var(--gold2); padding: 8px 16px; border-radius: 20px;
+      font-size: 13px; font-weight: 600;
+    }
+
+    .acq-cta-container { display: flex; justify-content: center; margin-top: 50px; }
+    .btn-acquisition {
+      background: linear-gradient(135deg, var(--burg), var(--burg2));
+      color: var(--white); padding: 16px 40px; border-radius: 10px;
+      font-weight: 700; font-size: 15px; text-decoration: none;
+      border: none; cursor: pointer; transition: all 0.3s;
+      box-shadow: 0 8px 24px rgba(123,28,58,0.3); display: inline-block;
+    }
+    .btn-acquisition:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(123,28,58,0.45);
+    }
+
+    /* ── POURQUOI NOUS ── */
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .why-list  { margin-top: 36px; display: flex; flex-direction: column; gap: 20px; }
+    .why-item  { display: flex; gap: 16px; align-items: flex-start; }
+    .why-icon  {
+      width: 42px; height: 42px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--burg), var(--burg2));
+      border-radius: 10px; display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+    .why-text h4 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .why-text p  { font-size: 13px; color: var(--gray); line-height: 1.6; }
+    .why-visual {
+      background: linear-gradient(135deg, var(--burg) 0%, var(--burg2) 100%);
+      border-radius: 20px; padding: 40px; color: var(--white);
+    }
+    .metric { margin-bottom: 28px; }
+    .metric-bar-wrap { background: rgba(255,255,255,0.15); border-radius: 8px; height: 8px; margin-top: 8px; }
+    .metric-bar { height: 8px; border-radius: 8px; background: linear-gradient(90deg, var(--gold), var(--gold2)); }
+    .metric-label { font-size: 13px; color: rgba(255,255,255,0.8); display: flex; justify-content: space-between; margin-bottom: 4px; }
+    .metric-label span { color: var(--gold2); font-weight: 700; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero-inner    { grid-template-columns: 1fr; gap: 40px; }
+      .why-grid      { grid-template-columns: 1fr; }
+      .acq-content   { grid-template-columns: 1fr; gap: 30px; }
+      .process-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="fr">
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon">S&amp;L</div>
+    <div>
+      <div class="logo-text">S&amp;L Conseil</div>
+      <div class="logo-sub">RH / Paie / Comptabilité</div>
+    </div>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
+    <li><a href="index.html" class="active"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="#acquisition"><span data-fr>Acquisition &amp; Reprise</span><span data-en>Acquisition &amp; Takeover</span></a></li>
+    <li><a href="services.html"><span data-fr>Services</span><span data-en>Services</span></a></li>
+    <li><a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a></li>
+    <li><a href="contact.html"><span data-fr>Contact</span><span data-en>Contact</span></a></li>
+    <li><button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span data-fr>Freelance · Indépendants &amp; PME</span>
+        <span data-en>Freelance · Independents &amp; SMEs</span>
+      </div>
+      <h1>
+        <span data-fr>Expert RH, Paie &amp;<br/><span style="color:var(--gold2)">Comptabilité</span><br/>pour votre succès</span>
+        <span data-en>HR, Payroll &amp;<br/><span style="color:var(--gold2)">Accounting</span><br/>Expert for your success</span>
+      </h1>
+      <p class="hero-sub">
+        <span data-fr>Des solutions RH et comptables sur mesure pour les indépendants et PME. Bulletins de paie, DSN, administration du personnel, conseil stratégique — externalisez en toute sérénité.</span>
+        <span data-en>Tailored HR and accounting solutions for independents and SMEs. Payslips, DSN, HR administration, strategic advice — outsource with complete peace of mind.</span>
+      </p>
+      <div class="hero-cta">
+        <a href="services.html" class="btn-primary">
+          <span data-fr>Découvrir les services</span>
+          <span data-en>Explore services</span>
+        </a>
+        <a href="contact.html" class="btn-outline">
+          <span data-fr>Prendre rendez-vous</span>
+          <span data-en>Book a consultation</span>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-card">
+        <div class="hc-avatar">
+          <img src="armand.jpg" alt="Armand Stéphane MOMASSO BOULI" />
+        </div>
+        <div class="hc-name">Armand Stéphane MOMASSO BOULI</div>
+        <div class="hc-title">
+          <span data-fr>Consultant Freelance RH / Paie / Comptabilité</span>
+          <span data-en>Freelance HR / Payroll / Accounting Consultant</span>
+        </div>
+        <div class="hc-stats">
+          <div class="stat">
+            <div class="stat-num">3+</div>
+            <div class="stat-label"><span data-fr>ans d'expérience</span><span data-en>years experience</span></div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">−40%</div>
+            <div class="stat-label"><span data-fr>temps de reporting</span><span data-en>reporting time</span></div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">+30%</div>
+            <div class="stat-label"><span data-fr>satisfaction RH</span><span data-en>HR satisfaction</span></div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">90%</div>
+            <div class="stat-label"><span data-fr>résolution conflits</span><span data-en>conflict resolution</span></div>
+          </div>
+        </div>
+        <div class="hc-tags">
+          <span class="tag">DSN</span>
+          <span class="tag">SIRH</span>
+          <span class="tag">GPEC</span>
+          <span class="tag">Droit du travail</span>
+          <span class="tag">SAP · ADP · SAGE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom:50px;">
+      <div class="section-label"><span data-fr>Nos expertises</span><span data-en>Our expertise</span></div>
+      <h2 class="section-title" style="margin:0 auto;">
+        <span data-fr>Des services adaptés à votre réalité</span>
+        <span data-en>Services tailored to your reality</span>
+      </h2>
+      <p class="section-desc" style="margin:14px auto 0;">
+        <span data-fr>Que vous soyez indépendant, TPE ou PME, S&amp;L Conseil vous accompagne avec des prestations flexibles et sur mesure.</span>
+        <span data-en>Whether you're self-employed, a micro-business or SME, S&amp;L Conseil supports you with flexible, tailored services.</span>
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="sc-icon" aria-hidden="true">💼</div>
+        <div class="sc-title"><span data-fr>Gestion de la Paie</span><span data-en>Payroll Management</span></div>
+        <p class="sc-desc">
+          <span data-fr>Bulletins de paie, DSN mensuelle, gestion des charges sociales (URSSAF, mutuelle, prévoyance), soldes de tout compte.</span>
+          <span data-en>Payslip preparation, monthly DSN, social charges management (URSSAF, health, provident), final account settlements.</span>
+        </p>
+        <a href="services.html" class="sc-link"><span data-fr>En savoir plus →</span><span data-en>Learn more →</span></a>
+      </div>
+      <div class="service-card">
+        <div class="sc-icon" aria-hidden="true">📋</div>
+        <div class="sc-title"><span data-fr>Administration RH</span><span data-en>HR Administration</span></div>
+        <p class="sc-desc">
+          <span data-fr>Rédaction de contrats, DPAE, gestion des absences et congés, suivi des arrêts maladie, tableaux de bord KPI.</span>
+          <span data-en>Contract drafting, DPAE, absence and leave management, sick leave tracking, KPI dashboards.</span>
+        </p>
+        <a href="services.html" class="sc-link"><span data-fr>En savoir plus →</span><span data-en>Learn more →</span></a>
+      </div>
+      <div class="service-card">
+        <div class="sc-icon" aria-hidden="true">🎯</div>
+        <div class="sc-title"><span data-fr>Conseil RH Stratégique</span><span data-en>Strategic HR Consulting</span></div>
+        <p class="sc-desc">
+          <span data-fr>GPEC/GEPP, plan de développement des compétences, dialogue social, accompagnement juridique, recrutement.</span>
+          <span data-en>GPEC/GEPP, skills development plan, social dialogue, legal support, recruitment and onboarding.</span>
+        </p>
+        <a href="services.html" class="sc-link"><span data-fr>En savoir plus →</span><span data-en>Learn more →</span></a>
+      </div>
+      <div class="service-card">
+        <div class="sc-icon" aria-hidden="true">📊</div>
+        <div class="sc-title"><span data-fr>Comptabilité &amp; Gestion</span><span data-en>Accounting &amp; Finance</span></div>
+        <p class="sc-desc">
+          <span data-fr>Suivi comptable pour indépendants et PME, gestion financière, reporting, préparation pour expert-comptable.</span>
+          <span data-en>Accounting support for independents and SMEs, financial management, reporting, prep for chartered accountants.</span>
+        </p>
+        <a href="services.html" class="sc-link"><span data-fr>En savoir plus →</span><span data-en>Learn more →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACQUISITION & REPRISE -->
+<section class="acquisition-section" id="acquisition">
+  <div class="section-inner" style="padding:0;">
+    <div class="acquisition-inner">
+      <div class="acq-header">
+        <div class="acq-badge">
+          <span data-fr>SERVICE PREMIUM</span>
+          <span data-en>PREMIUM SERVICE</span>
+        </div>
+        <h2 class="acq-title">
+          <span data-fr>Accompagnement stratégique à l'acquisition et à la reprise de PME</span>
+          <span data-en>Strategic support for SME and Small Cap acquisition and takeover</span>
+        </h2>
+        <div class="acq-subtitle">
+          <span data-fr>Structurez votre projet de développement externe</span>
+          <span data-en>Structure your external growth project</span>
+        </div>
+        <p class="acq-intro">
+          <span data-fr>Nous accompagnons les dirigeants, repreneurs et investisseurs dans la réalisation de leurs projets d'acquisition et de reprise de petites entreprises et PME / Small Cap. Accompagnement stratégique et opérationnel intégré couvrant l'ensemble du processus.</span>
+          <span data-en>We support executives, buyers and investors in acquiring and taking over small businesses and SMEs / Small Caps. Integrated strategic and operational support covering the entire process.</span>
+        </p>
+      </div>
+
+      <div class="acq-content">
+        <!-- GAUCHE -->
+        <div class="acq-left">
+          <div class="acq-included">
+            <div class="acq-included-title">
+              <span aria-hidden="true">📋</span>
+              <span data-fr>Ce que comprend l'accompagnement</span><span data-en>What's included</span>
+            </div>
+            <div class="included-list">
+              <div class="included-item">
+                <div class="included-bullet"></div>
+                <div class="included-text">
+                  <span class="included-highlight"><span data-fr>Définition de la stratégie d'acquisition</span><span data-en>Definition of acquisition strategy</span></span>
+                  <span data-fr> sans apport = Zéro euro</span><span data-en> with no contribution = Zero euros</span>
+                </div>
+              </div>
+              <div class="included-item">
+                <div class="included-bullet"></div>
+                <div class="included-text"><span data-fr>Recherche et qualification de cibles</span><span data-en>Target search and qualification</span></div>
+              </div>
+              <div class="included-item">
+                <div class="included-bullet"></div>
+                <div class="included-text"><span data-fr>Analyse stratégique et financière</span><span data-en>Strategic and financial analysis</span></div>
+              </div>
+              <div class="included-item">
+                <div class="included-bullet"></div>
+                <div class="included-text"><span data-fr>Appui à la valorisation et au business plan de reprise</span><span data-en>Valuation support and acquisition business plan</span></div>
+              </div>
+              <div class="included-item">
+                <div class="included-bullet"></div>
+                <div class="included-text"><span data-fr>Coordination des audits</span><span data-en>Audit coordination</span></div>
+              </div>
+              <div class="included-item">
+                <div class="included-bullet"></div>
+                <div class="included-text"><span data-fr>Assistance à la négociation</span><span data-en>Negotiation assistance</span></div>
+              </div>
+              <div class="included-item">
+                <div class="included-bullet"></div>
+                <div class="included-text"><span data-fr>Préparation de l'intégration et des 100 premiers jours</span><span data-en>Preparation of integration and first 100 days</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acq-benefits">
+            <div class="acq-benefits-title">
+              <span aria-hidden="true">📈</span>
+              <span data-fr>Avantages de notre accompagnement</span><span data-en>Benefits of our support</span>
+            </div>
+            <div class="benefit-list">
+              <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text"><span data-fr>Réduction des risques grâce à une analyse profonde de la cible</span><span data-en>Risk reduction through thorough target analysis</span></div></div>
+              <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text"><span data-fr>Accélération du processus de négociation et de due diligence</span><span data-en>Accelerated negotiation and due diligence process</span></div></div>
+              <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text"><span data-fr>Optimisation de la structuration fiscale et juridique</span><span data-en>Optimized tax and legal project structure</span></div></div>
+              <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text"><span data-fr>Intégration fluide des équipes et des processus RH</span><span data-en>Smooth integration of teams and HR processes</span></div></div>
+              <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text"><span data-fr>Maximisation de la création de valeur post-acquisition</span><span data-en>Maximized value creation post-acquisition</span></div></div>
+              <div class="benefit-item"><div class="benefit-check">✓</div><div class="benefit-text"><span data-fr>Conformité garantie aux réglementations en vigueur</span><span data-en>Guaranteed compliance with current regulations</span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DROITE -->
+        <div>
+          <div class="acq-process">
+            <div class="acq-process-title">
+              <span aria-hidden="true">🔄</span>
+              <span data-fr>Les phases clés de l'accompagnement</span><span data-en>Key phases of support</span>
+            </div>
+            <div class="process-steps">
+              <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-name"><span data-fr>Définition de la cible</span><span data-en>Target Definition</span></div>
+                <div class="step-desc"><span data-fr>Profil, secteur, taille, critères financiers</span><span data-en>Profile, sector, size, financial criteria</span></div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-name"><span data-fr>Analyse de l'entreprise</span><span data-en>Company Analysis</span></div>
+                <div class="step-desc"><span data-fr>Audit RH, financier et opérationnel approfondi</span><span data-en>In-depth HR, financial and operational audit</span></div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-name"><span data-fr>Structuration du projet</span><span data-en>Project Structuring</span></div>
+                <div class="step-desc"><span data-fr>Modèle juridique, fiscal et financement optimisé</span><span data-en>Optimized legal, tax and financing model</span></div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-name"><span data-fr>Coordination des audits</span><span data-en>Audit Coordination</span></div>
+                <div class="step-desc"><span data-fr>Pilotage des due diligences (RH, finance, compliance)</span><span data-en>Management of multiple due diligences</span></div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">5</div>
+                <div class="step-name"><span data-fr>Négociation &amp; Deal</span><span data-en>Negotiation &amp; Deal</span></div>
+                <div class="step-desc"><span data-fr>Support dans les phases de négociation et de finalisation</span><span data-en>Support during negotiation and closing phases</span></div>
+              </div>
+              <div class="process-step">
+                <div class="step-number">6</div>
+                <div class="step-name"><span data-fr>Post-acquisition</span><span data-en>Post-Acquisition</span></div>
+                <div class="step-desc"><span data-fr>Plan de 100 jours, intégration RH et opérationnelle</span><span data-en>100-day plan, HR and operational integration</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="acq-interventions">
+            <div class="acq-int-title">
+              <span aria-hidden="true">🎯</span>
+              <span data-fr>Nous intervenons sur</span><span data-en>We intervene on</span>
+            </div>
+            <div class="intervention-tags">
+              <div class="intervention-tag">Identification &amp; Sourcing</div>
+              <div class="intervention-tag"><span data-fr>Audit RH complet</span><span data-en>Complete HR audit</span></div>
+              <div class="intervention-tag">Due Diligence RH</div>
+              <div class="intervention-tag"><span data-fr>Risques sociaux &amp; conformité</span><span data-en>Social risks &amp; compliance</span></div>
+              <div class="intervention-tag"><span data-fr>Plan d'intégration RH</span><span data-en>HR integration plan</span></div>
+              <div class="intervention-tag"><span data-fr>Structuration juridique</span><span data-en>Legal structuring</span></div>
+              <div class="intervention-tag"><span data-fr>Optimisation fiscale</span><span data-en>Tax optimization</span></div>
+              <div class="intervention-tag"><span data-fr>Négociation deal</span><span data-en>Deal negotiation</span></div>
+            </div>
+            <div style="margin-top:28px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.15);">
+              <p style="font-size:14px; color:rgba(255,255,255,0.82); line-height:1.7;">
+                <span data-fr><strong>Public cible :</strong> Dirigeants en croissance externe, repreneurs de PME, investisseurs privés, fonds de capital-investissement, cadres en projet d'acquisition.</span>
+                <span data-en><strong>Target audience:</strong> Growth-focused executives, SME buyers, private investors, private equity funds, executives in acquisition projects.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acq-cta-container">
+        <a href="contact.html" class="btn-acquisition">
+          <span data-fr>Parler de votre projet de reprise →</span>
+          <span data-en>Discuss your takeover project →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<section>
+  <div class="section-inner">
+    <div class="why-grid">
+      <div>
+        <div class="section-label"><span data-fr>Pourquoi nous choisir</span><span data-en>Why choose us</span></div>
+        <h2 class="section-title">
+          <span data-fr>Une expertise humaine et analytique</span>
+          <span data-en>Human and analytical expertise</span>
+        </h2>
+        <p class="section-desc">
+          <span data-fr>Double formation RH et Sciences Sociales avec expérience internationale (France/Italie), Armand allie rigueur technique et sens humain.</span>
+          <span data-en>With dual HR and Social Sciences training and international experience (France/Italy), Armand combines technical rigour with a human-centred approach.</span>
+        </p>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon" aria-hidden="true">🌍</div>
+            <div class="why-text">
+              <h4><span data-fr>Trilingue FR / EN / IT</span><span data-en>Trilingual FR / EN / IT</span></h4>
+              <p><span data-fr>Accompagnement pour les entreprises et travailleurs étrangers en France.</span><span data-en>Support available for foreign companies and workers in France.</span></p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon" aria-hidden="true">⚡</div>
+            <div class="why-text">
+              <h4><span data-fr>Maîtrise des SIRH</span><span data-en>HRIS Expertise</span></h4>
+              <p><span data-fr>SuccessFactors, SAP, ADP, JAGGAER, SAGE — reporting avancé (QLIK SENSE, MERCER).</span><span data-en>SuccessFactors, SAP, ADP, JAGGAER, SAGE — advanced reporting tools.</span></p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon" aria-hidden="true">🔒</div>
+            <div class="why-text">
+              <h4><span data-fr>Conformité garantie</span><span data-en>Guaranteed compliance</span></h4>
+              <p><span data-fr>Droit du travail, conventions collectives, DSN, RGPD — veille juridique permanente.</span><span data-en>Labour law, collective agreements, DSN, GDPR — ongoing legal monitoring.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <h3 style="font-size:18px; margin-bottom:28px; font-weight:600;">
+          <span data-fr>Résultats prouvés</span><span data-en>Proven results</span>
+        </h3>
+        <div class="metric">
+          <div class="metric-label">
+            <span data-fr>Réduction du temps de reporting</span><span data-en>Reporting time reduction</span>
+            <span>−40%</span>
+          </div>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="width:40%"></div></div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">
+            <span data-fr>Satisfaction employés</span><span data-en>Employee satisfaction</span>
+            <span>+30%</span>
+          </div>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="width:75%"></div></div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">
+            <span data-fr>Résolution conflits CSE</span><span data-en>CSE conflict resolution</span>
+            <span>90%</span>
+          </div>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="width:90%"></div></div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">
+            <span data-fr>Maîtrise des outils SIRH</span><span data-en>HRIS tools proficiency</span>
+            <span>95%</span>
+          </div>
+          <div class="metric-bar-wrap"><div class="metric-bar" style="width:95%"></div></div>
+        </div>
+        <div style="margin-top:28px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.2);">
+          <div style="font-size:13px; color:rgba(255,255,255,0.6); margin-bottom:10px;">
+            <span data-fr>Formations &amp; Certifications</span><span data-en>Education &amp; Certifications</span>
+          </div>
+          <div style="font-size:13px; color:rgba(255,255,255,0.92); line-height:1.8;">
+            ✅ <span data-fr>Titre Pro Gestionnaire Paie — Next Formation, Paris 2025</span><span data-en>Payroll Manager Professional Title — Next Formation, Paris 2025</span><br/>
+            ✅ Master RH — ISTUD Business School, Milan<br/>
+            ✅ <span data-fr>Bachelor Comptabilité (en cours) — IHECF Paris</span><span data-en>Accounting Bachelor (in progress) — IHECF Paris</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="section-inner" style="padding:0;">
+    <h2>
+      <span data-fr>Prêt à externaliser votre RH et paie ?</span>
+      <span data-en>Ready to outsource your HR and payroll?</span>
+    </h2>
+    <p>
+      <span data-fr>Contactez S&amp;L Conseil pour un premier échange gratuit et sans engagement.</span>
+      <span data-en>Contact S&amp;L Conseil for a free, no-commitment initial consultation.</span>
+    </p>
+    <div class="hero-cta" style="justify-content:center; margin-top:24px;">
+      <a href="contact.html" class="btn-primary">
+        <span data-fr>Réserver une consultation →</span>
+        <span data-en>Book a consultation →</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="section-inner" style="max-width:1200px; margin:0 auto;">
+    <div class="footer-top">
+      <div style="flex:1;">© 2026 S&amp;L Conseil RH/Paie. <span data-fr>Tous droits réservés.</span><span data-en>All rights reserved.</span></div>
+      <div class="footer-links">
+        <a href="contact.html"><span data-fr>Contact</span><span data-en>Contact</span></a>
+        <a href="mentions-legales.html"><span data-fr>Mentions légales</span><span data-en>Legal notices</span></a>
+        <a href="politique-confidentialite.html"><span data-fr>Politique de confidentialité</span><span data-en>Privacy policy</span></a>
+      </div>
+    </div>
+    <div><span data-fr>Basé à Rosny-sous-Bois (93110), Île-de-France</span><span data-en>Based in Rosny-sous-Bois (93110), Île-de-France</span></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

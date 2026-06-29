@@ -1,0 +1,180 @@
+/* =========================================================
+   S&L Conseil RH/Paie — Feuille de style partagée
+   Palette : Bleu Professionnel · Bordeaux · Or
+   ========================================================= */
+
+:root {
+  --navy:    #1B3A6B;   /* Bleu marine profond */
+  --navy2:   #1E4D8C;   /* Bleu moyen */
+  --burg:    #7B1C3A;   /* Bordeaux */
+  --burg2:   #9E2D50;   /* Bordeaux clair */
+  --gold:    #C4932A;   /* Or professionnel */
+  --gold2:   #D4A843;   /* Or clair */
+  --white:   #FFFFFF;
+  --light:   #F4F7FB;
+  --gray:    #64748B;
+  --dark:    #0D1828;
+}
+
+/* ── RESET ── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: var(--dark); background: var(--white); }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 100;
+  background: rgba(27,58,107,0.97); backdrop-filter: blur(8px);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%; height: 68px;
+  border-bottom: 2px solid var(--gold);
+}
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo-icon {
+  width: 38px; height: 38px;
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 14px; color: var(--navy); letter-spacing: -0.5px;
+}
+.logo-text { color: var(--white); font-size: 16px; font-weight: 600; line-height: 1.2; }
+.logo-sub  { color: var(--gold2); font-size: 11px; font-weight: 400; }
+
+nav ul { list-style: none; display: flex; gap: 8px; align-items: center; }
+nav ul a {
+  color: rgba(255,255,255,0.85); text-decoration: none;
+  font-size: 14px; font-weight: 500; padding: 6px 14px; border-radius: 6px;
+  transition: all 0.2s;
+}
+nav ul a:hover, nav ul a.active { color: var(--gold2); background: rgba(196,147,42,0.14); }
+
+/* ── HAMBURGER ── */
+.hamburger {
+  display: none; flex-direction: column; cursor: pointer; gap: 5px;
+  background: none; border: none; padding: 8px; margin-right: 10px;
+}
+.hamburger span {
+  width: 24px; height: 2px; background: var(--white);
+  border-radius: 2px; transition: all 0.3s ease;
+}
+.hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(8px, 8px); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+
+/* ── LANGUE ── */
+.lang-btn {
+  background: var(--gold); color: var(--navy); border: none;
+  padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 700;
+  cursor: pointer; margin-left: 8px; transition: background 0.2s; min-width: 42px;
+}
+.lang-btn:hover { background: var(--gold2); }
+
+/* ── PAGE HERO (pages intérieures) ── */
+.page-hero {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--navy) 55%, var(--navy2) 100%);
+  padding: 130px 5% 70px; text-align: center;
+  position: relative; overflow: hidden;
+}
+.page-hero::after {
+  content: ''; position: absolute; bottom: -40px; right: -40px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: rgba(123,28,58,0.18);
+}
+.page-hero-label {
+  color: var(--gold2); font-size: 12px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px;
+}
+.page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px,4vw,52px); color: var(--white); margin-bottom: 16px;
+}
+.page-hero p {
+  color: rgba(255,255,255,0.75); font-size: 17px;
+  max-width: 580px; margin: 0 auto; line-height: 1.7;
+}
+
+/* ── SECTION TEMPLATE ── */
+section { padding: 80px 5%; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.section-label {
+  color: var(--burg); font-size: 12px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;
+}
+.section-title {
+  font-family: 'Playfair Display', serif; font-size: clamp(28px,3vw,40px);
+  color: var(--navy); margin-bottom: 16px; line-height: 1.25;
+}
+.section-desc { color: var(--gray); font-size: 16px; line-height: 1.75; max-width: 580px; }
+
+/* ── BOUTONS ── */
+.btn-primary {
+  background: var(--gold); color: var(--navy); padding: 13px 28px;
+  border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none;
+  transition: all 0.2s; display: inline-block; border: none; cursor: pointer;
+}
+.btn-primary:hover {
+  background: var(--gold2); transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(196,147,42,0.35);
+}
+.btn-outline {
+  background: transparent; color: var(--white); padding: 13px 28px;
+  border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none;
+  border: 1.5px solid rgba(255,255,255,0.35); transition: all 0.2s; display: inline-block;
+}
+.btn-outline:hover { border-color: var(--burg2); color: var(--burg2); }
+.btn-cta {
+  display: inline-block; background: var(--navy); color: var(--white);
+  padding: 12px 26px; border-radius: 8px; font-weight: 600; font-size: 14px;
+  text-decoration: none; transition: all 0.2s;
+}
+.btn-cta:hover { background: var(--burg); color: var(--white); transform: translateY(-2px); }
+
+/* ── BANDEAU CTA ── */
+.cta-band {
+  background: linear-gradient(135deg, var(--burg) 0%, var(--burg2) 100%);
+  text-align: center; padding: 80px 5%;
+}
+.cta-band h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px,3vw,38px); color: var(--white); margin-bottom: 14px;
+}
+.cta-band p { color: rgba(255,255,255,0.88); font-size: 16px; margin-bottom: 32px; }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--dark); color: rgba(255,255,255,0.6);
+  padding: 40px 5%; text-align: center; font-size: 13px;
+}
+footer a { color: var(--gold2); text-decoration: none; }
+.footer-top {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 16px; margin-bottom: 24px;
+}
+.footer-links { display: flex; gap: 24px; }
+.footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold2); }
+
+/* ── SWITCH LANGUE ── */
+body.en [data-fr]   { display: none; }
+body.fr [data-en]   { display: none; }
+body.en [data-en]   { display: block; }
+body.fr [data-fr]   { display: block; }
+.inline-fr, .inline-en { display: inline; }
+body.en .inline-fr  { display: none; }
+body.fr .inline-en  { display: none; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+
+  nav ul {
+    position: absolute; top: 68px; left: 0; right: 0; width: 100%;
+    background: rgba(27,58,107,0.98); flex-direction: column;
+    gap: 0; padding: 16px 5%; border-bottom: 2px solid var(--gold);
+    max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+  }
+  nav ul.active { max-height: 520px; }
+  nav ul li { width: 100%; padding: 10px 0; }
+  nav ul a { display: block; padding: 8px 0; font-size: 14px; }
+
+  .footer-top { flex-direction: column; text-align: center; }
+  .footer-links { justify-content: center; flex-direction: column; gap: 12px; }
+}

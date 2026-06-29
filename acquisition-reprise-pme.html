@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acquisition &amp; Reprise de PME / Small Cap – S&L Conseil RH/Paie</title>
+  <meta name="description" content="Accompagnement stratégique à l'acquisition et à la reprise de PME / Small Cap. Nous guidons dirigeants, repreneurs et investisseurs à travers toutes les phases du projet." />
+  <meta name="keywords" content="acquisition PME, reprise d'entreprise, Small Cap, accompagnement stratégique, due diligence" />
+  <meta name="author" content="Armand Stéphane MOMASSO BOULI" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sl-conseil-rh-paie.vercel.app/acquisition-reprise-pme.html" />
+  <meta property="og:title" content="Acquisition &amp; Reprise de PME / Small Cap – S&L Conseil" />
+  <meta property="og:description" content="Accompagnement stratégique et opérationnel pour l'acquisition et la reprise de PME et Small Cap." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sl-conseil-rh-paie.vercel.app/acquisition-reprise-pme.html" />
+  <meta property="og:image" content="https://sl-conseil-rh-paie.vercel.app/armand.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxQjNBNkIiLz48dGV4dCB4PSI1MCUiIHk9IjU0JSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNDNDkzMkEiPlMmTDwvdGV4dD48L3N2Zz4=" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── PAGE-SPECIFIC: ACQUISITION ── */
+
+    /* Hero full-height */
+    .acq-hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--navy2) 60%, #2a4a7f 100%);
+      display: flex; align-items: center; padding: 100px 5% 60px;
+      position: relative; overflow: hidden;
+    }
+    .acq-hero::before {
+      content: ''; position: absolute; top: -50%; right: -10%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(196,147,42,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .acq-hero-content { max-width: 700px; position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-block; background: rgba(196,147,42,0.15); border: 1px solid var(--gold);
+      color: var(--gold2); padding: 5px 14px; border-radius: 20px; font-size: 12px;
+      font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .acq-hero h1 {
+      font-family: 'Playfair Display', serif; font-size: clamp(40px,5vw,56px);
+      color: var(--white); line-height: 1.15; margin-bottom: 18px;
+    }
+    .acq-hero h1 em { color: var(--gold); font-style: normal; }
+    .hero-sub { color: rgba(255,255,255,0.75); font-size: 17px; line-height: 1.7; margin-bottom: 32px; }
+    .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--gold); color: var(--navy); padding: 13px 28px;
+      border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none;
+      transition: all 0.2s; display: inline-block;
+    }
+    .btn-primary:hover {
+      background: var(--gold2); transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(196,147,42,0.35);
+    }
+    .btn-outline {
+      background: transparent; color: var(--white); padding: 13px 28px;
+      border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none;
+      border: 1.5px solid rgba(255,255,255,0.35); transition: all 0.2s; display: inline-block;
+    }
+    .btn-outline:hover { border-color: var(--gold2); color: var(--gold2); }
+
+    /* ── INCLUDED ── */
+    .included-section { padding: 90px 5%; background: var(--light); }
+    .included-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; margin-top: 40px; }
+    .included-content { display: flex; flex-direction: column; gap: 16px; }
+    .included-item {
+      background: var(--white); border-radius: 12px; padding: 20px;
+      border-left: 4px solid var(--burg); display: flex; gap: 16px; align-items: flex-start;
+      box-shadow: 0 2px 8px rgba(27,58,107,0.06); transition: all 0.3s;
+    }
+    .included-item:hover { transform: translateX(8px); box-shadow: 0 8px 20px rgba(27,58,107,0.12); }
+    .included-number {
+      width: 40px; height: 40px; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--burg), var(--burg2));
+      color: var(--white); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 16px;
+    }
+    .included-text h4 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .included-text p  { font-size: 13px; color: var(--gray); line-height: 1.6; }
+    .included-highlight {
+      display: inline-block; background: rgba(196,147,42,0.15);
+      color: var(--gold); padding: 2px 8px; border-radius: 4px; font-weight: 600;
+    }
+    .included-box {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      border-radius: 16px; padding: 36px; color: var(--white); height: fit-content;
+    }
+    .box-title {
+      font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold2);
+      margin-bottom: 20px; display: flex; align-items: center; gap: 10px;
+    }
+    .box-list { display: flex; flex-direction: column; gap: 14px; }
+    .box-item { display: flex; gap: 12px; align-items: flex-start; }
+    .box-check {
+      width: 24px; height: 24px; background: var(--gold); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--navy); font-weight: 700; font-size: 14px; flex-shrink: 0;
+    }
+    .box-text { font-size: 14px; color: rgba(255,255,255,0.9); line-height: 1.6; }
+
+    /* ── PROCESS ── */
+    .process-section { padding: 90px 5%; background: var(--white); }
+    .process-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 24px; margin-top: 40px; }
+    .process-card {
+      background: var(--light); border-radius: 14px; padding: 28px;
+      border: 1px solid #e2e8f0; text-align: center; transition: all 0.3s;
+      position: relative; overflow: hidden;
+    }
+    .process-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--burg), var(--gold));
+    }
+    .process-card:hover { transform: translateY(-8px); box-shadow: 0 16px 40px rgba(27,58,107,0.12); }
+    .process-number {
+      width: 50px; height: 50px;
+      background: linear-gradient(135deg, var(--burg), var(--burg2));
+      color: var(--white); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 20px; margin: 0 auto 16px;
+    }
+    .process-name { font-weight: 700; color: var(--navy); font-size: 16px; margin-bottom: 10px; }
+    .process-desc { font-size: 14px; color: var(--gray); line-height: 1.6; }
+
+    /* ── INTERVENTIONS ── */
+    .interventions-section { padding: 90px 5%; background: var(--light); }
+    .interventions-tags {
+      display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 16px; margin-top: 40px;
+    }
+    .intervention-tag {
+      background: var(--white); border: 1.5px solid var(--gold); color: var(--navy);
+      padding: 18px 20px; border-radius: 12px; font-weight: 600; font-size: 14px;
+      text-align: center; transition: all 0.3s; box-shadow: 0 2px 8px rgba(196,147,42,0.1);
+    }
+    .intervention-tag:hover {
+      background: linear-gradient(135deg, rgba(123,28,58,0.07), rgba(158,45,80,0.04));
+      border-color: var(--burg); transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(123,28,58,0.15);
+    }
+
+    /* ── BENEFITS ── */
+    .benefits-section { padding: 90px 5%; background: var(--white); }
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 28px; margin-top: 40px; }
+    .benefit-card {
+      background: linear-gradient(135deg, rgba(27,58,107,0.04), rgba(27,58,107,0.02));
+      border-radius: 14px; padding: 32px;
+      border: 1px solid rgba(27,58,107,0.12); transition: all 0.3s;
+    }
+    .benefit-card:hover {
+      transform: translateY(-6px); box-shadow: 0 12px 32px rgba(27,58,107,0.12);
+      border-color: var(--burg);
+    }
+    .benefit-icon { font-size: 32px; margin-bottom: 14px; }
+    .benefit-title { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+    .benefit-desc  { font-size: 14px; color: var(--gray); line-height: 1.65; }
+
+    /* ── CTA BAND ── */
+    .acq-cta {
+      background: linear-gradient(135deg, var(--burg) 0%, var(--burg2) 100%);
+      text-align: center; padding: 80px 5%;
+    }
+    .acq-cta h2 {
+      font-family: 'Playfair Display', serif; font-size: clamp(28px,3vw,40px);
+      color: var(--white); margin-bottom: 16px;
+    }
+    .acq-cta p {
+      color: rgba(255,255,255,0.85); font-size: 16px; margin-bottom: 32px;
+      max-width: 600px; margin-left: auto; margin-right: auto;
+    }
+    .btn-acquisition {
+      background: linear-gradient(135deg, var(--gold), var(--gold2));
+      color: var(--navy); padding: 16px 40px; border-radius: 10px;
+      font-weight: 700; font-size: 15px; text-decoration: none;
+      transition: all 0.3s; box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      display: inline-block;
+    }
+    .btn-acquisition:hover {
+      transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+    }
+
+    @media (max-width: 768px) {
+      .included-grid { grid-template-columns: 1fr; }
+      .process-grid  { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .interventions-tags { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="fr">
+
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon">S&amp;L</div>
+    <div>
+      <div class="logo-text">S&amp;L Conseil</div>
+      <div class="logo-sub">RH / Paie / Comptabilité</div>
+    </div>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
+    <li><a href="index.html"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="services.html"><span data-fr>Services</span><span data-en>Services</span></a></li>
+    <li><a href="acquisition-reprise-pme.html" class="active"><span data-fr>Acquisition &amp; Reprise</span><span data-en>M&amp;A Services</span></a></li>
+    <li><a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="acq-hero">
+  <div class="acq-hero-content">
+    <div class="hero-badge">
+      <span data-fr>SERVICE PREMIUM</span>
+      <span data-en>PREMIUM SERVICE</span>
+    </div>
+    <h1>
+      <span data-fr>Accompagnement stratégique à l'<em>acquisition et à la reprise de PME</em></span>
+      <span data-en>Strategic support for <em>SME and Small Cap acquisition</em></span>
+    </h1>
+    <p class="hero-sub">
+      <span data-fr>Structurez votre projet de développement externe avec un partenaire expérimenté. De la sélection de cibles jusqu'à la stabilisation post-acquisition.</span>
+      <span data-en>Structure your external growth project with an experienced partner. From target selection through post-acquisition stabilization.</span>
+    </p>
+    <div class="hero-cta">
+      <a href="contact.html" class="btn-primary">
+        <span data-fr>Parler de votre projet →</span>
+        <span data-en>Discuss your project →</span>
+      </a>
+      <a href="index.html" class="btn-outline">
+        <span data-fr>Retour à l'accueil</span>
+        <span data-en>Back to home</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="included-section">
+  <div class="section-inner">
+    <div class="section-label">
+      <span data-fr>ACCOMPAGNEMENT COMPLET</span>
+      <span data-en>COMPREHENSIVE SUPPORT</span>
+    </div>
+    <h2 class="section-title">
+      <span data-fr>Ce que comprend l'accompagnement</span>
+      <span data-en>What's included in our support</span>
+    </h2>
+    <div class="included-grid">
+      <div class="included-content">
+        <div class="included-item">
+          <div class="included-number">1</div>
+          <div class="included-text">
+            <h4><span data-fr>Définition de la stratégie d'acquisition</span><span data-en>Acquisition Strategy Definition</span></h4>
+            <p><span data-fr>Profil de cible, critères d'acquisition, périmètre</span><span data-en>Target profile, acquisition criteria, scope</span> <span class="included-highlight" data-fr>SANS APPORT = 0€</span><span class="included-highlight" data-en>NO CONTRIBUTION = €0</span></p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-number">2</div>
+          <div class="included-text">
+            <h4><span data-fr>Recherche et qualification de cibles</span><span data-en>Target Search &amp; Qualification</span></h4>
+            <p><span data-fr>Identification d'opportunités, screening, analyse préliminaire</span><span data-en>Opportunity identification, screening, preliminary analysis</span></p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-number">3</div>
+          <div class="included-text">
+            <h4><span data-fr>Analyse stratégique et financière</span><span data-en>Strategic &amp; Financial Analysis</span></h4>
+            <p><span data-fr>Diagnostic complet, valorisation, synergies potentielles</span><span data-en>Full diagnostic, valuation, potential synergies</span></p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-number">4</div>
+          <div class="included-text">
+            <h4><span data-fr>Appui à la valorisation et au business plan</span><span data-en>Valuation &amp; Business Plan Support</span></h4>
+            <p><span data-fr>Business plan de reprise, modèle financier, ROI</span><span data-en>Acquisition business plan, financial model, ROI</span></p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-number">5</div>
+          <div class="included-text">
+            <h4><span data-fr>Coordination des audits</span><span data-en>Audit Coordination</span></h4>
+            <p><span data-fr>Due diligence RH, financière, opérationnelle, compliance</span><span data-en>HR, financial, operational due diligence, compliance</span></p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-number">6</div>
+          <div class="included-text">
+            <h4><span data-fr>Assistance à la négociation</span><span data-en>Negotiation Assistance</span></h4>
+            <p><span data-fr>Support deal terms, structuration, closing</span><span data-en>Support deal terms, structuring, closing</span></p>
+          </div>
+        </div>
+        <div class="included-item">
+          <div class="included-number">7</div>
+          <div class="included-text">
+            <h4><span data-fr>Accompagnement post-acquisition</span><span data-en>Post-Acquisition Support</span></h4>
+            <p><span data-fr>Plan 100 jours, intégration RH, stabilisation opérationnelle</span><span data-en>100-day plan, HR integration, operational stabilization</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="included-box">
+        <div class="box-title"><span aria-hidden="true">📈</span> <span data-fr>Avantages clés</span><span data-en>Key benefits</span></div>
+        <div class="box-list">
+          <div class="box-item"><div class="box-check">✓</div><div class="box-text"><span data-fr>Réduction des risques et des erreurs d'acquisition</span><span data-en>Reduced acquisition risks and errors</span></div></div>
+          <div class="box-item"><div class="box-check">✓</div><div class="box-text"><span data-fr>Accélération du processus de négociation</span><span data-en>Accelerated negotiation process</span></div></div>
+          <div class="box-item"><div class="box-check">✓</div><div class="box-text"><span data-fr>Optimisation fiscale et juridique du montage</span><span data-en>Optimized tax and legal structure</span></div></div>
+          <div class="box-item"><div class="box-check">✓</div><div class="box-text"><span data-fr>Intégration fluide des équipes et processus</span><span data-en>Smooth team and process integration</span></div></div>
+          <div class="box-item"><div class="box-check">✓</div><div class="box-text"><span data-fr>Maximisation de la création de valeur</span><span data-en>Maximized value creation</span></div></div>
+          <div class="box-item"><div class="box-check">✓</div><div class="box-text"><span data-fr>Conformité légale et réglementaire garantie</span><span data-en>Guaranteed legal compliance</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS PHASES -->
+<section class="process-section">
+  <div class="section-inner">
+    <div class="section-label">
+      <span data-fr>LES PHASES CLÉS</span>
+      <span data-en>KEY PHASES</span>
+    </div>
+    <h2 class="section-title">
+      <span data-fr>Six étapes structurantes pour votre succès</span>
+      <span data-en>Six structured steps for your success</span>
+    </h2>
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="process-number">1</div>
+        <div class="process-name"><span data-fr>Définition de la cible</span><span data-en>Target Definition</span></div>
+        <div class="process-desc"><span data-fr>Profil entreprise, secteur, taille, critères financiers et stratégiques alignés à votre vision</span><span data-en>Company profile, sector, size, financial and strategic criteria aligned with your vision</span></div>
+      </div>
+      <div class="process-card">
+        <div class="process-number">2</div>
+        <div class="process-name"><span data-fr>Analyse de l'entreprise</span><span data-en>Company Analysis</span></div>
+        <div class="process-desc"><span data-fr>Audit RH, financier et opérationnel approfondi pour identifier opportunités et risques</span><span data-en>In-depth HR, financial and operational audit to identify opportunities and risks</span></div>
+      </div>
+      <div class="process-card">
+        <div class="process-number">3</div>
+        <div class="process-name"><span data-fr>Structuration du projet</span><span data-en>Project Structuring</span></div>
+        <div class="process-desc"><span data-fr>Modèle juridique, fiscal et financement optimisé selon votre contexte</span><span data-en>Optimized legal, tax and financing model tailored to your context</span></div>
+      </div>
+      <div class="process-card">
+        <div class="process-number">4</div>
+        <div class="process-name"><span data-fr>Coordination des audits</span><span data-en>Audit Coordination</span></div>
+        <div class="process-desc"><span data-fr>Pilotage de multiples due diligences (RH, finance, compliance, opération)</span><span data-en>Management of multiple due diligences (HR, finance, compliance, operations)</span></div>
+      </div>
+      <div class="process-card">
+        <div class="process-number">5</div>
+        <div class="process-name"><span data-fr>Négociation &amp; Deal</span><span data-en>Negotiation &amp; Deal</span></div>
+        <div class="process-desc"><span data-fr>Support pendant les phases de négociation, finalisation et closing</span><span data-en>Support during negotiation, finalization and closing phases</span></div>
+      </div>
+      <div class="process-card">
+        <div class="process-number">6</div>
+        <div class="process-name"><span data-fr>Accompagnement post-acquisition</span><span data-en>Post-Acquisition Support</span></div>
+        <div class="process-desc"><span data-fr>Plan 100 jours, intégration RH et opérationnelle, stabilisation</span><span data-en>100-day plan, HR and operational integration, stabilization</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERVENTIONS -->
+<section class="interventions-section">
+  <div class="section-inner">
+    <div class="section-label">
+      <span data-fr>DOMAINES D'EXPERTISE</span>
+      <span data-en>AREAS OF EXPERTISE</span>
+    </div>
+    <h2 class="section-title">
+      <span data-fr>Nous intervenons sur</span>
+      <span data-en>We intervene on</span>
+    </h2>
+    <div class="interventions-tags">
+      <div class="intervention-tag"><span data-fr>Identification &amp; Sourcing</span><span data-en>Identification &amp; Sourcing</span></div>
+      <div class="intervention-tag"><span data-fr>Audit RH complet</span><span data-en>Complete HR audit</span></div>
+      <div class="intervention-tag"><span data-fr>Due Diligence RH</span><span data-en>HR Due Diligence</span></div>
+      <div class="intervention-tag"><span data-fr>Risques sociaux &amp; conformité</span><span data-en>Social risks &amp; compliance</span></div>
+      <div class="intervention-tag"><span data-fr>Valorisation du personnel</span><span data-en>Personnel valuation</span></div>
+      <div class="intervention-tag"><span data-fr>Plan d'intégration RH</span><span data-en>HR integration plan</span></div>
+      <div class="intervention-tag"><span data-fr>Structuration juridique</span><span data-en>Legal structuring</span></div>
+      <div class="intervention-tag"><span data-fr>Optimisation fiscale</span><span data-en>Tax optimization</span></div>
+      <div class="intervention-tag"><span data-fr>Analyse financière</span><span data-en>Financial analysis</span></div>
+      <div class="intervention-tag"><span data-fr>Négociation deal terms</span><span data-en>Deal terms negotiation</span></div>
+      <div class="intervention-tag"><span data-fr>Gestion de transition</span><span data-en>Transition management</span></div>
+      <div class="intervention-tag"><span data-fr>Stabilisation post-closing</span><span data-en>Post-closing stabilization</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+  <div class="section-inner">
+    <div class="section-label">
+      <span data-fr>POURQUOI NOUS CHOISIR</span>
+      <span data-en>WHY CHOOSE US</span>
+    </div>
+    <h2 class="section-title">
+      <span data-fr>Les bénéfices d'un accompagnement expert</span>
+      <span data-en>Benefits of expert support</span>
+    </h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">🎯</div>
+        <div class="benefit-title"><span data-fr>Réduction des risques</span><span data-en>Risk Reduction</span></div>
+        <div class="benefit-desc"><span data-fr>Analyse profonde de la cible et identification des risques cachés avant l'acquisition</span><span data-en>In-depth target analysis and identification of hidden risks before acquisition</span></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">⚡</div>
+        <div class="benefit-title"><span data-fr>Accélération du processus</span><span data-en>Accelerated Process</span></div>
+        <div class="benefit-desc"><span data-fr>Négociation et due diligence optimisées pour une finalisation plus rapide</span><span data-en>Optimized negotiation and due diligence for faster closing</span></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">💰</div>
+        <div class="benefit-title"><span data-fr>Optimisation financière</span><span data-en>Financial Optimization</span></div>
+        <div class="benefit-desc"><span data-fr>Structuration fiscale et juridique pour maximiser votre ROI</span><span data-en>Tax and legal structuring to maximize your ROI</span></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">👥</div>
+        <div class="benefit-title"><span data-fr>Intégration fluide</span><span data-en>Smooth Integration</span></div>
+        <div class="benefit-desc"><span data-fr>Plan d'intégration RH et opérationnelle pour éviter les perturbations</span><span data-en>HR and operational integration plan to avoid disruptions</span></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">📈</div>
+        <div class="benefit-title"><span data-fr>Création de valeur</span><span data-en>Value Creation</span></div>
+        <div class="benefit-desc"><span data-fr>Identification et capture des synergies pour maximiser la création de valeur</span><span data-en>Identification and capture of synergies to maximize value creation</span></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon" aria-hidden="true">✅</div>
+        <div class="benefit-title"><span data-fr>Conformité garantie</span><span data-en>Guaranteed Compliance</span></div>
+        <div class="benefit-desc"><span data-fr>Respect total des réglementations légales, sociales et fiscales en vigueur</span><span data-en>Full compliance with applicable legal, social and tax regulations</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="acq-cta" id="contact">
+  <h2>
+    <span data-fr>Prêt à structurer votre projet d'acquisition ?</span>
+    <span data-en>Ready to structure your acquisition project?</span>
+  </h2>
+  <p>
+    <span data-fr>Contactez-nous pour une première consultation gratuite et sans engagement. Découvrez comment nous pouvons accélérer la réalisation de vos ambitions.</span>
+    <span data-en>Contact us for a free, no-commitment consultation. Discover how we can accelerate your acquisition ambitions.</span>
+  </p>
+  <a href="contact.html" class="btn-acquisition">
+    <span data-fr>Parler de votre projet de reprise →</span>
+    <span data-en>Discuss your takeover project →</span>
+  </a>
+</section>
+
+<footer>
+  <div class="section-inner" style="max-width:1200px; margin:0 auto;">
+    <div class="footer-top">
+      <div style="color:var(--white); font-weight:600; font-size:16px;">S&amp;L Conseil RH/Paie</div>
+      <div class="footer-links">
+        <a href="index.html"><span data-fr>Accueil</span><span data-en>Home</span></a>
+        <a href="services.html"><span data-fr>Services</span><span data-en>Services</span></a>
+        <a href="acquisition-reprise-pme.html"><span data-fr>Acquisition &amp; Reprise</span><span data-en>M&amp;A Services</span></a>
+        <a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html"><span data-fr>Mentions légales</span><span data-en>Legal</span></a>
+        <a href="politique-confidentialite.html"><span data-fr>Confidentialité</span><span data-en>Privacy</span></a>
+      </div>
+    </div>
+    <div>© 2026 S&amp;L Conseil RH/Paie · Paris, Île-de-France · <a href="mailto:info-slconseilrh@proton.me">info-slconseilrh@proton.me</a> · 07 80 70 41 52</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

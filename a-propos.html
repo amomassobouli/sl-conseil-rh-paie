@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À Propos – Armand Stéphane MOMASSO BOULI | S&L Conseil RH/Paie</title>
+  <meta name="description" content="Armand Stéphane MOMASSO BOULI, consultant freelance RH et Paie basé en Île-de-France. Parcours international, expertise SIRH, gestion sociale et dialogue syndical." />
+  <meta name="keywords" content="Armand Stéphane MOMASSO BOULI, consultant RH freelance, expert paie, SIRH, dialogue social, CSE, gestion RH, Île-de-France" />
+  <meta name="author" content="Armand Stéphane MOMASSO BOULI" />
+  <meta name="google-site-verification" content="6OkVMW998DL7Skp7Ol39t3DmgtOdneUFL4Z6uISbE0w" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://sl-conseil-rh-paie.vercel.app/a-propos.html" />
+  <meta property="og:title" content="À Propos – Armand Stéphane MOMASSO BOULI | S&L Conseil RH/Paie" />
+  <meta property="og:description" content="Consultant freelance RH et Paie, parcours international, expert SIRH et gestion sociale pour PME et indépendants en Île-de-France." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://sl-conseil-rh-paie.vercel.app/a-propos.html" />
+  <meta property="og:image" content="https://sl-conseil-rh-paie.vercel.app/armand.jpg" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTIiIGZpbGw9IiMxQjNBNkIiLz48dGV4dCB4PSI1MCUiIHk9IjU0JSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjgwMCIgZm9udC1mYW1pbHk9IkFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IiNDNDkzMkEiPlMmTDwvdGV4dD48L3N2Zz4=" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── PROFIL ── */
+    .profile-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: start; }
+    .profile-card {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      border-radius: 24px; padding: 40px; color: var(--white); text-align: center;
+      position: sticky; top: 90px;
+    }
+    .profile-photo {
+      width: 140px; height: 140px; border-radius: 50%;
+      object-fit: cover; object-position: top;
+      border: 4px solid var(--gold);
+      margin: 0 auto 20px; display: block;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    .profile-name  { font-size: 18px; font-weight: 800; margin-bottom: 6px; line-height: 1.3; }
+    .profile-title { color: var(--gold2); font-size: 13px; margin-bottom: 24px; line-height: 1.5; }
+    .contact-item  { display: flex; align-items: center; gap: 10px; font-size: 13px; color: rgba(255,255,255,0.82); margin-bottom: 10px; text-align: left; }
+    .contact-icon  { font-size: 16px; flex-shrink: 0; }
+    .divider       { border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 20px 0; }
+    .lang-badges   { display: flex; flex-direction: column; gap: 8px; }
+    .lang-badge {
+      display: flex; justify-content: space-between; align-items: center;
+      background: rgba(255,255,255,0.07); border-radius: 8px; padding: 8px 12px;
+    }
+    .lang-name  { font-size: 13px; font-weight: 600; }
+    .lang-level { font-size: 11px; background: var(--gold); color: var(--navy); padding: 2px 8px; border-radius: 10px; font-weight: 700; }
+
+    /* ── BIO ── */
+    .bio { font-size: 16px; color: var(--gray); line-height: 1.8; margin-bottom: 36px; }
+    .bio strong { color: var(--navy); }
+    .bio p { margin-bottom: 18px; }
+
+    /* ── PARCOURS ── */
+    .parcours-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 36px; }
+    .exp-card {
+      background: var(--light); border-radius: 14px; padding: 22px;
+      border: 1px solid #e2e8f0; border-left: 4px solid var(--burg); transition: all 0.3s;
+    }
+    .exp-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(27,58,107,0.1); }
+    .exp-year    { font-size: 12px; color: var(--burg); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .exp-role    { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+    .exp-company { font-size: 13px; color: var(--gray); margin-bottom: 10px; }
+    .exp-points  { list-style: none; }
+    .exp-points li { font-size: 13px; color: var(--gray); line-height: 1.6; padding: 3px 0; display: flex; gap: 8px; }
+    .exp-points li::before { content: "✦"; color: var(--gold); flex-shrink: 0; font-size: 10px; margin-top: 4px; }
+    .exp-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+    .exp-tag  { background: rgba(27,58,107,0.08); color: var(--navy); padding: 3px 10px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+
+    /* ── VALEURS ── */
+    .valeurs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 18px; margin-top: 40px; }
+    .valeur-card {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%);
+      border-radius: 16px; padding: 24px; color: var(--white); text-align: center;
+    }
+    .valeur-icon  { font-size: 32px; margin-bottom: 12px; }
+    .valeur-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+    .valeur-desc  { font-size: 13px; color: rgba(255,255,255,0.72); line-height: 1.5; }
+
+    /* ── COMPÉTENCES ── */
+    .skills-section { background: var(--light); }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 24px; margin-top: 48px; }
+    .skill-group { background: var(--white); border-radius: 16px; padding: 28px; border: 1px solid #e2e8f0; }
+    .sg-title   { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .skill-item { margin-bottom: 14px; }
+    .skill-name { font-size: 13px; font-weight: 500; color: var(--dark); margin-bottom: 5px; display: flex; justify-content: space-between; }
+    .skill-pct  { font-size: 12px; color: var(--burg); font-weight: 700; }
+    .skill-bar-wrap { background: #eef1f6; border-radius: 6px; height: 6px; }
+    .skill-bar  { height: 6px; border-radius: 6px; background: linear-gradient(90deg, var(--navy), var(--burg)); }
+
+    /* ── FORMATIONS ── */
+    .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 20px; margin-top: 48px; }
+    .edu-card {
+      background: var(--white); border-radius: 16px; padding: 28px;
+      border: 1px solid #e2e8f0; border-left: 4px solid var(--gold); transition: all 0.3s;
+    }
+    .edu-card:hover { box-shadow: 0 12px 32px rgba(27,58,107,0.1); transform: translateY(-3px); }
+    .edu-date   { font-size: 12px; color: var(--gold); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .edu-degree { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 5px; }
+    .edu-school { font-size: 13px; color: var(--gray); }
+    .edu-badge  { display: inline-block; margin-top: 10px; background: rgba(123,28,58,0.1); color: var(--burg); padding: 2px 10px; border-radius: 10px; font-size: 11px; font-weight: 700; }
+
+    @media (max-width: 768px) {
+      .profile-grid    { grid-template-columns: 1fr; }
+      .profile-card    { position: static; }
+      .parcours-cards  { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body class="fr">
+
+<nav>
+  <a href="index.html" class="logo">
+    <div class="logo-icon">S&amp;L</div>
+    <div>
+      <div class="logo-text">S&amp;L Conseil</div>
+      <div class="logo-sub">RH / Paie / Comptabilité</div>
+    </div>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-menu">
+    <li><a href="index.html"><span data-fr>Accueil</span><span data-en>Home</span></a></li>
+    <li><a href="services.html"><span data-fr>Services</span><span data-en>Services</span></a></li>
+    <li><a href="a-propos.html" class="active"><span data-fr>À propos</span><span data-en>About</span></a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-label"><span data-fr>À propos</span><span data-en>About</span></div>
+  <h1>Armand Stéphane MOMASSO BOULI</h1>
+  <p>
+    <span data-fr>Consultant RH, Paie &amp; Comptabilité — une vision stratégique ancrée dans des valeurs humaines fortes.</span>
+    <span data-en>HR, Payroll &amp; Accounting Consultant — a strategic vision grounded in strong human values.</span>
+  </p>
+</div>
+
+<!-- PROFIL + PARCOURS -->
+<section>
+  <div class="section-inner">
+    <div class="profile-grid">
+
+      <!-- CARTE PROFIL -->
+      <div class="profile-card">
+        <img src="armand.jpg" alt="Armand Stéphane MOMASSO BOULI" class="profile-photo" />
+        <div class="profile-name">Armand Stéphane MOMASSO BOULI</div>
+        <div class="profile-title">
+          <span data-fr>Consultant Freelance<br/>RH · Paie · Comptabilité</span>
+          <span data-en>Freelance Consultant<br/>HR · Payroll · Accounting</span>
+        </div>
+        <div class="contact-item"><span class="contact-icon" aria-hidden="true">✉️</span>info-slconseilrh@proton.me</div>
+        <div class="contact-item"><span class="contact-icon" aria-hidden="true">📍</span>Île-de-France</div>
+        <div class="contact-item"><span class="contact-icon" aria-hidden="true">📱</span>07 80 70 41 52</div>
+        <div class="contact-item"><span class="contact-icon" aria-hidden="true">🚗</span><span data-fr>Véhicule personnel</span><span data-en>Own vehicle</span></div>
+        <hr class="divider"/>
+        <div style="font-size:12px; color:rgba(255,255,255,0.5); margin-bottom:12px; font-weight:600; letter-spacing:1px; text-transform:uppercase;">
+          <span data-fr>Langues</span><span data-en>Languages</span>
+        </div>
+        <div class="lang-badges">
+          <div class="lang-badge"><span class="lang-name">Français</span><span class="lang-level">Natif</span></div>
+          <div class="lang-badge"><span class="lang-name">Anglais</span><span class="lang-level">B2</span></div>
+          <div class="lang-badge"><span class="lang-name">Italien</span><span class="lang-level">C1-C2</span></div>
+        </div>
+      </div>
+
+      <!-- CONTENU -->
+      <div>
+        <div class="section-label"><span data-fr>Mon histoire</span><span data-en>My story</span></div>
+        <h2 class="section-title">
+          <span data-fr>D'une vocation sociale à l'expertise RH</span>
+          <span data-en>From a social vocation to HR expertise</span>
+        </h2>
+
+        <div class="bio">
+          <span data-fr>
+            <p>Mon parcours débute avec une conviction profonde : <strong>l'humain est au cœur de toute organisation performante</strong>. C'est cette conviction qui m'a conduit à entreprendre un double cursus académique en Italie — un <strong>Master I en Gestion des Ressources Humaines et Organisation</strong> à l'ISTUD Business School de Milan, couplé à un <strong>Master II en Management des Services Sociaux</strong> à l'Université de Gênes.</p>
+            <p>Avant de rejoindre le monde de l'entreprise, j'ai exercé pendant un an en tant qu'<strong>Assistant Social Spécialisé</strong> à l'Agence Sanitaire Locale de Gênes, puis accompli une mission de <strong>Service Civique National</strong>. Ces expériences m'ont appris à écouter, négocier et résoudre des situations complexes.</p>
+            <p>En 2022, j'intègre <strong>Bolton Food – Saupiquet</strong>, multinationale franco-italienne, comme Adjoint Responsable RH. Pendant plus de <strong>3 ans</strong>, je pilote la paie complète (bulletins, DSN, charges sociales), l'administration RH, le dialogue social CSE, la GPEC/GEPP et la qualité de vie au travail. J'automatise les rapports RH via SIRH, réduisant le temps de reporting de <strong>40 %</strong> et améliorant la satisfaction employés de <strong>30 %</strong>.</p>
+            <p>En 2025, j'obtiens mon <strong>Titre Professionnel Gestionnaire Paie</strong> et commence un <strong>Bachelor en Comptabilité</strong> à l'IHECF Paris pour proposer une offre freelance véritablement complète sous la bannière <strong>S&amp;L Conseil</strong>.</p>
+          </span>
+          <span data-en>
+            <p>My journey begins with a deep conviction: <strong>people are at the heart of every high-performing organisation</strong>. This led me to pursue a dual academic programme in Italy — a <strong>Master I in Human Resources Management</strong> at ISTUD Business School in Milan, alongside a <strong>Master II in Social Services Management</strong> at the University of Genoa.</p>
+            <p>Before entering the corporate world, I spent a year as a <strong>Specialised Social Worker</strong> at the Local Health Agency in Genoa, then completed a <strong>National Civil Service</strong> mission. These experiences taught me to listen, negotiate and resolve complex situations.</p>
+            <p>In 2022, I joined <strong>Bolton Food – Saupiquet</strong>, a Franco-Italian multinational, as Deputy HR Manager. For over <strong>3 years</strong>, I oversaw full payroll (payslips, DSN, social charges), HR administration, social dialogue with the CSE, GPEC/GEPP and quality of work life. I automated HR reports via HRIS, reducing reporting time by <strong>40%</strong> and improving employee satisfaction by <strong>30%</strong>.</p>
+            <p>In 2025, I obtained my <strong>Professional Payroll Manager Title</strong> and began a <strong>Bachelor in Accounting</strong> at IHECF Paris to offer a truly comprehensive freelance service under the <strong>S&amp;L Conseil</strong> banner.</p>
+          </span>
+        </div>
+
+        <!-- EXPÉRIENCE -->
+        <div class="section-label" style="margin-bottom:16px;"><span data-fr>Expérience professionnelle</span><span data-en>Professional experience</span></div>
+        <div class="parcours-cards">
+          <div class="exp-card">
+            <div class="exp-year">2022 – 2025</div>
+            <div class="exp-role"><span data-fr>Adjoint Responsable RH</span><span data-en>Deputy HR Manager</span></div>
+            <div class="exp-company">Bolton Food – Saupiquet · France &amp; Italie</div>
+            <ul class="exp-points">
+              <li><span data-fr>Paie complète : bulletins, DSN, charges sociales</span><span data-en>Full payroll: payslips, DSN, social charges</span></li>
+              <li><span data-fr>Dialogue social CSE, accords d'entreprise</span><span data-en>CSE social dialogue, company agreements</span></li>
+              <li><span data-fr>GPEC/GEPP, QVT, recrutement, onboarding</span><span data-en>GPEC/GEPP, QWL, recruitment, onboarding</span></li>
+              <li><span data-fr>Automatisation SIRH : −40% temps de reporting</span><span data-en>HRIS automation: −40% reporting time</span></li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag">SAP</span>
+              <span class="exp-tag">SuccessFactors</span>
+              <span class="exp-tag">QLIK SENSE</span>
+              <span class="exp-tag">DSN</span>
+            </div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-year">2021 – 2022</div>
+            <div class="exp-role"><span data-fr>Assistant Social Spécialisé</span><span data-en>Specialised Social Worker</span></div>
+            <div class="exp-company">ASL (Agenzia Sanitaria Locale) · Gênes, Italie</div>
+            <ul class="exp-points">
+              <li><span data-fr>Accompagnement social de personnes vulnérables</span><span data-en>Social support for vulnerable individuals</span></li>
+              <li><span data-fr>Médiation et résolution de conflits</span><span data-en>Mediation and conflict resolution</span></li>
+              <li><span data-fr>Coordination avec équipes pluridisciplinaires</span><span data-en>Coordination with multidisciplinary teams</span></li>
+            </ul>
+            <div class="exp-tags">
+              <span class="exp-tag"><span data-fr>Travail social</span><span data-en>Social work</span></span>
+              <span class="exp-tag">Italien C1-C2</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VALEURS -->
+        <div class="section-label" style="margin-bottom:16px;"><span data-fr>Mes valeurs</span><span data-en>My values</span></div>
+        <div class="valeurs-grid">
+          <div class="valeur-card">
+            <div class="valeur-icon" aria-hidden="true">🤝</div>
+            <div class="valeur-title"><span data-fr>Écoute active</span><span data-en>Active listening</span></div>
+            <div class="valeur-desc"><span data-fr>Comprendre avant d'agir. Chaque client a une réalité unique.</span><span data-en>Understand before acting. Every client has a unique reality.</span></div>
+          </div>
+          <div class="valeur-card">
+            <div class="valeur-icon" aria-hidden="true">🎯</div>
+            <div class="valeur-title"><span data-fr>Rigueur &amp; résultats</span><span data-en>Rigour &amp; results</span></div>
+            <div class="valeur-desc"><span data-fr>Des processus solides, des livrables sans erreur, dans les délais.</span><span data-en>Robust processes, error-free deliverables, on time.</span></div>
+          </div>
+          <div class="valeur-card">
+            <div class="valeur-icon" aria-hidden="true">🌍</div>
+            <div class="valeur-title"><span data-fr>Ouverture internationale</span><span data-en>International openness</span></div>
+            <div class="valeur-desc"><span data-fr>Trilingue FR/EN/IT, formé en France et en Italie.</span><span data-en>Trilingual FR/EN/IT, trained in France and Italy.</span></div>
+          </div>
+          <div class="valeur-card">
+            <div class="valeur-icon" aria-hidden="true">📈</div>
+            <div class="valeur-title"><span data-fr>Amélioration continue</span><span data-en>Continuous improvement</span></div>
+            <div class="valeur-desc"><span data-fr>Formation permanente pour rester à la pointe des évolutions légales et digitales.</span><span data-en>Ongoing training to stay ahead of legal and digital developments.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section class="skills-section">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom:0;">
+      <div class="section-label"><span data-fr>Compétences</span><span data-en>Skills</span></div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-fr>Expertise technique &amp; humaine</span>
+        <span data-en>Technical &amp; human expertise</span>
+      </h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="sg-title"><span aria-hidden="true">💼</span> <span data-fr>Paie &amp; Droit Social</span><span data-en>Payroll &amp; Labour Law</span></div>
+        <div class="skill-item">
+          <div class="skill-name"><span>DSN / <span data-fr>Charges sociales</span><span data-en>Social charges</span></span><span class="skill-pct">95%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span><span data-fr>Bulletins de paie</span><span data-en>Payslips</span></span><span class="skill-pct">95%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span><span data-fr>Droit du travail &amp; CC</span><span data-en>Labour law &amp; CBA</span></span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>GPEC / GEPP</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="sg-title"><span aria-hidden="true">⚙️</span> <span data-fr>Logiciels &amp; SIRH</span><span data-en>Software &amp; HRIS</span></div>
+        <div class="skill-item">
+          <div class="skill-name"><span>SAP / SuccessFactors</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>SAGE Paie / ADP</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>QLIK SENSE / MERCER</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span>Excel <span data-fr>avancé</span><span data-en>advanced</span></span><span class="skill-pct">92%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="sg-title"><span aria-hidden="true">🤝</span> Soft Skills</div>
+        <div class="skill-item">
+          <div class="skill-name"><span><span data-fr>Dialogue social &amp; CSE</span><span data-en>Social dialogue &amp; CSE</span></span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span><span data-fr>Empathie &amp; écoute</span><span data-en>Empathy &amp; listening</span></span><span class="skill-pct">95%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span><span data-fr>Pensée analytique</span><span data-en>Analytical thinking</span></span><span class="skill-pct">92%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-name"><span><span data-fr>Gestion du stress</span><span data-en>Stress management</span></span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATIONS -->
+<section>
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom:0;">
+      <div class="section-label"><span data-fr>Formations &amp; Diplômes</span><span data-en>Education &amp; Qualifications</span></div>
+      <h2 class="section-title" style="text-align:center;">
+        <span data-fr>Un parcours académique international</span>
+        <span data-en>An international academic background</span>
+      </h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-date">2026 → 2027</div>
+        <div class="edu-degree"><span data-fr>Bachelor Comptabilité &amp; Gestion Financière</span><span data-en>Bachelor in Accounting &amp; Financial Management</span></div>
+        <div class="edu-school">IHECF (Institut des Hautes Études Comptables et Financières) — Paris</div>
+        <div class="edu-badge"><span data-fr>En cours</span><span data-en>In progress</span></div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-date">2025</div>
+        <div class="edu-degree"><span data-fr>Titre Professionnel Gestionnaire Paie</span><span data-en>Professional Payroll Manager Title</span></div>
+        <div class="edu-school">Next Formation — Vincennes, Paris</div>
+        <div class="edu-badge"><span data-fr>Certifié</span><span data-en>Certified</span></div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-date">2019 – 2022</div>
+        <div class="edu-degree"><span data-fr>Master I — Gestion des RH &amp; Organisation</span><span data-en>Master I — HR Management &amp; Organisation</span></div>
+        <div class="edu-school">ISTUD Business School — Milan, Italie</div>
+        <div class="edu-badge">🇮🇹 International</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-date">2019 – 2022</div>
+        <div class="edu-degree"><span data-fr>Master II — Management des Services Sociaux</span><span data-en>Master II — Social Services Management</span></div>
+        <div class="edu-school"><span data-fr>Université de Gênes — Italie</span><span data-en>University of Genoa — Italy</span></div>
+        <div class="edu-badge">🇮🇹 International</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2><span data-fr>Travaillons ensemble</span><span data-en>Let's work together</span></h2>
+  <p><span data-fr>Vous cherchez un expert RH/Paie de confiance ? Contactez-moi pour un premier échange gratuit.</span><span data-en>Looking for a trusted HR/Payroll expert? Contact me for a free initial consultation.</span></p>
+  <a href="contact.html" class="btn-primary"><span data-fr>Me contacter →</span><span data-en>Contact me →</span></a>
+</div>
+
+<footer>
+  <div class="section-inner" style="max-width:1200px; margin:0 auto;">
+    <div class="footer-top">
+      <div style="color:var(--white); font-weight:600; font-size:16px;">S&amp;L Conseil RH/Paie</div>
+      <div class="footer-links">
+        <a href="index.html"><span data-fr>Accueil</span><span data-en>Home</span></a>
+        <a href="services.html"><span data-fr>Services</span><span data-en>Services</span></a>
+        <a href="a-propos.html"><span data-fr>À propos</span><span data-en>About</span></a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html"><span data-fr>Mentions légales</span><span data-en>Legal</span></a>
+      </div>
+    </div>
+    <div>© 2026 S&amp;L Conseil RH/Paie · Paris, Île-de-France · <a href="mailto:info-slconseilrh@proton.me">info-slconseilrh@proton.me</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
