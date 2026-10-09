@@ -3,7 +3,7 @@
 Site vitrine bilingue (FR/EN) pour **S&L Conseil RH/Paie**, cabinet freelance spécialisé en Ressources Humaines, Paie et Comptabilité pour indépendants et PME.
 
 **Consultant :** Armand Stéphane MOMASSO BOULI  
-**Contact :** info-slconseilrh@proton.me · 07 80 70 41 52  
+**Contact :** info-slconseilrh@proton.me · 07 80 78 12 93  
 **Localisation :**  — Île-de-France .
 
 ---
